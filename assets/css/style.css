@@ -1,1 +1,24 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.name {
+  display: flex;
+}
+
+.kv {
+  position: relative;
+  border: solid 1px black;
+  height: 100vh;
+  width: 100vw;
+  left: 26px;
+  top: 0px;
+  border-radius: 0px;
+}
+
+.kv-1 {
+  position: absolute;
+}
+
+.kv-box {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+/*# sourceMappingURL=style.css.map */
