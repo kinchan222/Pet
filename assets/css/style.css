@@ -67,20 +67,24 @@
 
 .livers-container {
   background-color: black;
-  height: 100vh;
+  height: 50vh;
   width: 100vw;
+  display: flex;
 }
 
-.livers-container h2 {
+.livers-main {
+  border: solid 3.79px #EA5555;
+  background-color: white;
+  width: 350px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+h2 {
   color: white;
   text-align: center;
   font-size: 50px;
   font-weight: 900;
-}
-
-.livers-box {
-  height: 100px;
-  width: 100px;
-  background-color: white;
+  background-color: black;
 }
 /*# sourceMappingURL=style.css.map */
