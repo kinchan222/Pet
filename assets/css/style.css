@@ -9,7 +9,6 @@
   border: solid 1px black;
   height: 100vh;
   width: 100vw;
-  left: 26px;
   top: 0px;
   border-radius: 0px;
 }
@@ -64,5 +63,24 @@
   font-size: 20px;
   top: 300px;
   left: 500px;
+}
+
+.livers-container {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+.livers-container h2 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.livers-box {
+  height: 100px;
+  width: 100px;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */
