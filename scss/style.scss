@@ -201,17 +201,18 @@ h2 {
 
 
 // Service
-.icon1 {
-  border: 3.42px solid #9067E9;
-  height: 800px;
-  width: 400px;
+
+.icon1{
+    border: 3.42px solid #9067E9;
+    height: 900px;
+    width: 400px; 
+    justify-content: space-around;
 }
 
-.service {
-  display: flex;
-  max-width: 1170px; // コンテンツ幅
-  margin: 0 auto;
-
+.service{
+    display: flex;
+    width: 1170px;
+    justify-content: space-around;
 }
 
 // Customer Voice
@@ -223,22 +224,25 @@ h2 {
 }
 
 h3 {
-  font-size: 50px;
-  text-align: center;
-}
+
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+  }
 
 // Contact
 
-.contact {
-  display: flex;
-  max-width: 1170px; // コンテンツ幅
-  margin: auto;
+.contact{
+    display: flex;
+    width: 1170px;
+    justify-content: space-around;
 }
 
-.contact1 {
-  border: solid 1px black;
-  height: 800px;
-  width: 400px;
+.contact1{
+    border: solid 1px black;
+    justify-content: space-around;
+    height: 800px;
+    width: 400px;
 }
 
 
@@ -250,19 +254,30 @@ h3 {
   border: #20C55A;
 }
 
-.denw {
-  display: flex;
-  width: 400px;
+.denw{
+    display: flex;
+    width: 400px;
+    flex-direction: column;
 }
 
 .wa {
   width: 300px;
 }
 
-.ar {
-  width: 70px;
+.ar{
+    height: 60px;
+    width: 60px;
 }
 
+h5{
+
+}
+
+.contact-wrap{
+    width: 100%;
+    border: solid 1px black;
+    padding: 10px;
+}
 
 // Company
 

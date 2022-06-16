@@ -175,14 +175,15 @@ h2 {
 
 .icon1 {
   border: 3.42px solid #9067E9;
-  height: 800px;
+  height: 900px;
   width: 400px;
+  justify-content: space-around;
 }
 
 .service {
   display: flex;
-  max-width: 1170px;
-  margin: 0 auto;
+  width: 1170px;
+  justify-content: space-around;
 }
 
 .voice {
@@ -193,16 +194,18 @@ h2 {
 h3 {
   font-size: 50px;
   text-align: center;
+  padding-top: 50px;
 }
 
 .contact {
   display: flex;
-  max-width: 1170px;
-  margin: auto;
+  width: 1170px;
+  justify-content: space-around;
 }
 
 .contact1 {
   border: solid 1px black;
+  justify-content: space-around;
   height: 800px;
   width: 400px;
 }
@@ -218,6 +221,7 @@ h3 {
 .denw {
   display: flex;
   width: 400px;
+  flex-direction: column;
 }
 
 .wa {
@@ -225,7 +229,14 @@ h3 {
 }
 
 .ar {
-  width: 70px;
+  height: 60px;
+  width: 60px;
+}
+
+.contact-wrap {
+  width: 100%;
+  border: solid 1px black;
+  padding: 10px;
 }
 
 .company {
