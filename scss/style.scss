@@ -70,20 +70,22 @@
 }
 
 // Livers
+.content{
+  background-color: black;
+}
+
 .livers {
   &-container {
-    background-color: black;
-    height: 50vh;
-    width: 100vw;
+    width: 1170px;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
   }
 
   &-main {
     border: solid 3.79px #EA5555;
     background-color: white;
-    width: 250px;
-    height: 350px;
+    width: 24.1%;
     margin: 0 5px;
   }
 
@@ -99,12 +101,11 @@ h2 {
   text-align: center;
   font-size: 50px;
   font-weight: 900;
-  background-color: black;
 }
 
 // About
 .about {
-  // position: relative;
+   position: relative;
 
   h3 {
     font-size: 80px;
@@ -136,9 +137,10 @@ h2 {
     }
   }
 
-  // &-deco {
-  //   position: absolute;
-  // }
+   &-deco1,  &-deco2,  &-deco3,  &-deco4,  &-deco5,  &-deco6 {
+    position: absolute;
+
+    }
 }
 
 //  Sponser

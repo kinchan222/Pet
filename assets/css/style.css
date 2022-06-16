@@ -65,19 +65,21 @@
   left: 500px;
 }
 
-.livers-container {
+.content {
   background-color: black;
-  height: 50vh;
-  width: 100vw;
+}
+
+.livers-container {
+  width: 1170px;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .livers-main {
   border: solid 3.79px #EA5555;
   background-color: white;
-  width: 250px;
-  height: 350px;
+  width: 24.1%;
   margin: 0 5px;
 }
 
@@ -92,7 +94,10 @@ h2 {
   text-align: center;
   font-size: 50px;
   font-weight: 900;
-  background-color: black;
+}
+
+.about {
+  position: relative;
 }
 
 .about h3 {
@@ -122,6 +127,10 @@ h2 {
   width: 200px;
   height: 280px;
   margin: 0 30px;
+}
+
+.about-deco1, .about-deco2, .about-deco3, .about-deco4, .about-deco5, .about-deco6 {
+  position: absolute;
 }
 
 .sponser {
