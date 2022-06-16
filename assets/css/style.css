@@ -166,14 +166,15 @@ h2 {
 
 .icon1 {
   border: 3.42px solid #9067E9;
-  height: 800px;
+  height: 900px;
   width: 400px;
+  justify-content: space-around;
 }
 
 .service {
   display: flex;
   width: 1170px;
-  margin: 0 auto;
+  justify-content: space-around;
 }
 
 .voice {
@@ -184,6 +185,7 @@ h2 {
 h3 {
   font-size: 50px;
   text-align: center;
+  padding-top: 50px;
 }
 
 .contact {
@@ -216,7 +218,14 @@ h3 {
 }
 
 .ar {
-  width: 70px;
+  height: 60px;
+  width: 60px;
+}
+
+.contact-wrap {
+  width: 100%;
+  border: solid 1px black;
+  padding: 10px;
 }
 
 .company {
