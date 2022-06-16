@@ -164,4 +164,14 @@ h2 {
   font-size: 40px;
   text-align: center;
 }
+
+.icon1 {
+  border: solid 1px black;
+  height: 800px;
+  width: 500px;
+}
+
+.cvoice {
+  flex-direction: row;
+}
 /*# sourceMappingURL=style.css.map */
