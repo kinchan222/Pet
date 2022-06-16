@@ -1,5 +1,7 @@
-.name{
+.menu {
   display: flex;
+  justify-content: end;
+  margin: 0 20px;
 }
 
 .kv {
@@ -7,17 +9,167 @@
   border: solid 1px black;
   height: 100vh;
   width: 100vw;
-  left: 26px;
   top: 0px;
   border-radius: 0px;
 
-  &-1{
+  &-container {
     position: absolute;
   }
-  
-  &-box{
+
+  &-1,
+  &-2,
+  &-3,
+  &-4 {
+    position: absolute;
+  }
+
+  &-1 {
+    height: 400px;
+    width: 300px;
+    left: 1100px;
+    top: 20px;
+    border-radius: 0px;
+
+  }
+
+  &-2 {
+    height: 400px;
+    width: 300px;
+    left: 81px;
+    top: 358px;
+    border-radius: 0px;
+  }
+
+  &-3 {
+    height: 200px;
+    width: 400px;
+    left: 50px;
+    top: 20px;
+    border-radius: 0px;
+  }
+
+  &-4 {
+    height: 200px;
+    width: 400px;
+    left: 1000px;
+    top: 550px;
+    border-radius: 0px;
+  }
+
+  &-box {
     position: absolute;
     height: 100vh;
     width: 100vw;
+  }
+
+  &-container {
+    font-size: 20px;
+    top: 300px;
+    left: 500px;
+  }
+}
+
+// Livers
+.livers {
+  &-container {
+    background-color: black;
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  &-main {
+    border: solid 3.79px #EA5555;
+    background-color: white;
+    width: 250px;
+    height: 350px;
+    margin: 0 5px;
+  }
+
+  &-box {
+    width: 220px;
+    height: 220px;
+    margin: 10px;
+  }
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  background-color: black;
+}
+
+// About
+.about {
+  // position: relative;
+
+  h3 {
+    font-size: 80px;
+    text-align: center;
+  }
+
+  &-container {
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    h4 {
+      width: 200px;
+      height: 24px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      width: 454px;
+    }
+
+    img {
+      width: 200px;
+      height: 280px;
+      margin: 0 30px;
+    }
+  }
+
+  // &-deco {
+  //   position: absolute;
+  // }
+}
+
+//  Sponser
+.sponser {
+  height: 100vh;
+  width: 100vw;
+
+  h3 {
+    font-size: 80px;
+    text-align: center;
+  }
+
+  &-photo {
+    height: 600px;
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  &-box1 {
+    height: 260px;
+    width: 564px;
+  }
+
+  &-box2 {
+    height: 193px;
+    width: 232px;
+    margin: 50px 120px;
+  }
+
+  p {
+    font-size: 40px;
+    text-align: center;
   }
 }
