@@ -211,13 +211,15 @@ h3 {
 .contact{
     display: flex;
     width: 1170px;
-    margin: auto;
+    justify-content: space-around;
 }
 
 .contact1{
     border: solid 1px black;
+    justify-content: space-around;
     height: 800px;
     width: 400px;
+    
 }
 
 
@@ -232,6 +234,7 @@ h3 {
 .denw{
     display: flex;
     width: 400px;
+    flex-direction: column;
 }
 
 .wa{
