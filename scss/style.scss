@@ -76,15 +76,21 @@
     height: 50vh;
     width: 100vw;
     display: flex;
-
+    justify-content: center;
   }
+
   &-main {
     border: solid 3.79px #EA5555;
     background-color: white;
-    width: 350px;
-    height: 500px;
-    margin: 0 auto;
+    width: 250px;
+    height: 350px;
+    margin: 0 5px;
+  }
 
+  &-box {
+    width: 220px;
+    height: 220px;
+    margin: 10px;
   }
 }
 
@@ -94,4 +100,76 @@ h2 {
   font-size: 50px;
   font-weight: 900;
   background-color: black;
+}
+
+// About
+.about {
+  // position: relative;
+
+  h3 {
+    font-size: 80px;
+    text-align: center;
+  }
+
+  &-container {
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    h4 {
+      width: 200px;
+      height: 24px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      width: 454px;
+    }
+
+    img {
+      width: 200px;
+      height: 280px;
+      margin: 0 30px;
+    }
+  }
+
+  // &-deco {
+  //   position: absolute;
+  // }
+}
+
+//  Sponser
+.sponser {
+  height: 100vh;
+  width: 100vw;
+
+  h3 {
+    font-size: 80px;
+    text-align: center;
+  }
+
+  &-photo {
+    height: 600px;
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  &-box1 {
+    height: 260px;
+    width: 564px;
+  }
+
+  &-box2 {
+    height: 193px;
+    width: 232px;
+    margin: 50px 120px;
+  }
+
+  p {
+    font-size: 40px;
+    text-align: center;
+  }
 }
