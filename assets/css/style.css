@@ -166,12 +166,83 @@ h2 {
 }
 
 .icon1 {
-  border: solid 1px black;
+  border: 3.42px solid #9067E9;
   height: 800px;
-  width: 500px;
+  width: 400px;
 }
 
-.cvoice {
-  flex-direction: row;
+.service {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.voice {
+  display: flex;
+  background-image: url(../img/deco_12.png);
+}
+
+h3 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  width: 1170px;
+  margin: auto;
+}
+
+.contact1 {
+  border: solid 1px black;
+  height: 800px;
+  width: 400px;
+}
+
+.fc {
+  border-color: #FFEA02;
+}
+
+.fl {
+  border: #20C55A;
+}
+
+.denw {
+  display: flex;
+  width: 400px;
+}
+
+.wa {
+  width: 300px;
+}
+
+.ar {
+  width: 70px;
+}
+
+.company {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.map {
+  border: solid 1px black;
+  width: 500px;
+  height: 500px;
+}
+
+h4 {
+  font-size: 50px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
