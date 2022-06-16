@@ -168,7 +168,8 @@ h2 {
   border: 3.42px solid #9067E9;
   height: 900px;
   width: 400px;
-  justify-content: space-around;
+  margin: 0 auto;
+  padding: 30px;
 }
 
 .service {
@@ -236,18 +237,28 @@ h3 {
   padding: 50px;
 }
 
-.map {
-  border: solid 1px black;
-  width: 500px;
-  height: 500px;
-}
-
 h4 {
   font-size: 50px;
 }
 
 h5 {
   font-size: 20px;
+}
+
+input {
+  display: flex;
+  width: 250px;
+  color: black;
+  text-align: center;
+  padding: 15px;
+}
+
+button {
+  width: 250px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
 }
 
 footer {
