@@ -6,7 +6,6 @@
 
 .kv {
   position: relative;
-  border: solid 1px black;
   height: 100vh;
   width: 100vw;
   top: 0px;
@@ -67,13 +66,14 @@
 
 .content {
   background-color: black;
+  height: 100vh;
 }
 
 .livers-container {
   width: 1170px;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .livers-main {
@@ -90,14 +90,14 @@
 }
 
 h2 {
-  color: white;
+  color: black;
   text-align: center;
-  font-size: 50px;
-  font-weight: 900;
+  font-size: 80px;
 }
 
 .about {
   position: relative;
+  width: 1170px;
 }
 
 .about h3 {
@@ -136,6 +136,7 @@ h2 {
 .sponser {
   height: 100vh;
   width: 100vw;
+  width: 1170px;
 }
 
 .sponser h3 {

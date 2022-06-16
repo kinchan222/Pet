@@ -6,7 +6,7 @@
 
 .kv {
   position: relative;
-  border: solid 1px black;
+  // border: solid 1px black;
   height: 100vh;
   width: 100vw;
   top: 0px;
@@ -69,17 +69,18 @@
   }
 }
 
-// Livers
+// Livers 
 .content{
   background-color: black;
+  height: 100vh;
 }
 
 .livers {
   &-container {
-    width: 1170px;
+    width: 1170px; // コンテンツ幅
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    margin: 10px auto;
   }
 
   &-main {
@@ -97,15 +98,15 @@
 }
 
 h2 {
-  color: white;
+  color: black;
   text-align: center;
-  font-size: 50px;
-  font-weight: 900;
+  font-size: 80px;
 }
 
 // About
 .about {
    position: relative;
+   width: 1170px; // コンテンツ幅
 
   h3 {
     font-size: 80px;
@@ -147,6 +148,7 @@ h2 {
 .sponser {
   height: 100vh;
   width: 100vw;
+  width: 1170px; // コンテンツ幅
 
   h3 {
     font-size: 80px;
