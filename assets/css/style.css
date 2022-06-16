@@ -124,9 +124,7 @@ h2 {
 }
 
 .about-container img {
-  width: 200px;
-  height: 280px;
-  margin: 0 30px;
+  width: 25%;
 }
 
 .about-deco1, .about-deco2, .about-deco3, .about-deco4, .about-deco5, .about-deco6 {
