@@ -6,6 +6,13 @@
   margin: 15px 0 0 380px;
 }
 
+@media screen and (max-width: 767px) {
+  .menu {
+    display: block;
+    display: none;
+  }
+}
+
 .kv {
   display: flex;
   width: 100vw;
@@ -51,15 +58,33 @@
 
 .kv-container {
   position: absolute;
-  font-size: 20px;
   top: 280px;
   left: 450px;
 }
 
-.content {
-  background-color: black;
-  width: 100vw;
-  padding: 30px;
+@media screen and (max-width: 767px) {
+  .kv {
+    display: block;
+    width: 100%;
+  }
+  .kv-people {
+    display: flex;
+  }
+  .kv-3, .kv-2 {
+    width: 50%;
+  }
+  .kv-1, .kv-4 {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .kv-box {
+    top: 0%;
+  }
+  .content {
+    background-color: black;
+    width: 100vw;
+    padding: 30px;
+  }
 }
 
 .livers-container {
@@ -148,8 +173,18 @@
 h2 {
   color: black;
   text-align: center;
-  font-size: 80px;
+  font-size: 45px;
   font-weight: 400;
+}
+
+@media screen and (max-width: 767px) {
+  .livers-container {
+    display: block;
+  }
+  .livers-main1, .livers-main2, .livers-main3, .livers-main4, .livers-main5, .livers-main6, .livers-main7, .livers-main8 {
+    width: 64%;
+    margin: 10px auto;
+  }
 }
 
 .about {
@@ -296,7 +331,7 @@ h2 {
   text-align: center;
 }
 
-h3 {
+.name {
   font-size: 45px;
   font-weight: 700;
   text-align: center;

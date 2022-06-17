@@ -6,6 +6,14 @@
   margin: 15px 0 0 380px;
 }
 
+// ヘッダーのレスポンシブ
+@media screen and (max-width:767px) {
+  .menu {
+    display: block;
+    display: none;
+  }
+}
+
 .kv {
   display: flex;
   // border: solid 1px black;
@@ -58,17 +66,47 @@
 
   &-container {
     position: absolute;
-    font-size: 20px;
     top: 280px;
     left: 450px;
   }
 }
 
-// Livers 
-.content {
-  background-color: black;
-  width: 100vw;
-  padding: 30px;
+// kvのレスポンシブ
+@media screen and (max-width:767px) {
+  .kv {
+    display: block;
+    width: 100%;
+
+    &-people {
+      display: flex;
+    }
+
+    &-3,
+    &-2 {
+      width: 50%;
+    }
+
+    &-1,
+    &-4 {
+      width: 50%;
+      margin: 0 auto;
+    }
+    &-box {
+      top: 0%;
+    }
+  }
+
+
+
+
+
+
+  // Livers 
+  .content {
+    background-color: black;
+    width: 100vw;
+    padding: 30px;
+  }
 }
 
 .livers {
@@ -168,10 +206,32 @@
 h2 {
   color: black;
   text-align: center;
-  font-size: 80px;
+  font-size: 45px;
   font-weight: 400;
-
 }
+
+
+// Liversレスポンシブ
+@media screen and (max-width:767px) {
+  .livers {
+    &-container {
+      display: block;
+    }
+
+    &-main1,
+    &-main2,
+    &-main3,
+    &-main4,
+    &-main5,
+    &-main6,
+    &-main7,
+    &-main8 {
+      width: 64%;
+      margin: 10px auto;
+    }
+  }
+}
+
 
 // About
 .about {
@@ -328,7 +388,7 @@ h2 {
 
 
 // Service
-h3 {
+.name {
   font-size: 45px;
   font-weight: 700;
   text-align: center;
@@ -411,13 +471,13 @@ h3 {
   }
 
 
-.fl {
-  font-size: 28px;
-  font-weight: 700;
-  width: 170px;
-  text-align: center;
-  background: linear-gradient(transparent 70%, #20C55A 100%);
-}
+  .fl {
+    font-size: 28px;
+    font-weight: 700;
+    width: 170px;
+    text-align: center;
+    background: linear-gradient(transparent 70%, #20C55A 100%);
+  }
 
   p {
     font-size: 18px;
@@ -448,7 +508,8 @@ h3 {
   border: solid 1px black;
   padding: 10px;
 }
-input{
+
+input {
   border: solid 1px black;
 }
 
