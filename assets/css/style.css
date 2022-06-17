@@ -372,15 +372,73 @@ h2 {
   padding: 20px 5px;
 }
 
-.voice {
-  display: flex;
-  background-image: url(../img/deco_12.png);
-}
-
-.voice h3 {
+h3 {
   font-size: 50px;
   text-align: center;
   padding-top: 50px;
+}
+
+.vtext {
+  margin: 15px;
+  padding: 50px;
+}
+
+.vtext p {
+  width: 436px;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.vtext h5 {
+  font-size: 18px;
+}
+
+.vtext h6 {
+  font-size: 29px;
+}
+
+.voice {
+  margin: 15px;
+  width: 374px;
+  box-shadow: -15px 15px 0 #E7AFC3;
+}
+
+.dc {
+  display: flex;
+  margin: 0 auto;
+  text-align: start;
+  width: 100vw;
+  position: relative;
+  max-width: 1170px;
+}
+
+.dc-7 {
+  position: absolute;
+  width: 111px;
+  top: 0;
+  left: 0;
+}
+
+.dc-8 {
+  position: absolute;
+  width: 227px;
+  top: 0;
+  left: 100%;
+}
+
+.dc-9 {
+  width: 208px;
+  left: 0;
+  top: 40%;
+}
+
+.dc-10 {
+  width: 129px;
+}
+
+.dc-people {
+  position: absolute;
+  left: 0;
 }
 
 .contact {
@@ -447,6 +505,8 @@ input {
   display: flex;
   justify-content: space-around;
   padding: 50px;
+  max-width: 1170px;
+  margin: auto;
 }
 
 h4 {
