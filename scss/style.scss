@@ -73,9 +73,9 @@
 
 .livers {
   &-container {
-    // background-color:black;
+    background-color:black;
     max-width: 1170px; // コンテンツ幅
-    background-color: #20C55A;
+    // background-color: #20C55A;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -144,7 +144,6 @@
     margin: 5px;
   }
 
- 
 
   &-box1,
   &-box2,
@@ -170,26 +169,26 @@ h2 {
 // About
 .about {
   max-width: 1170px; // コンテンツ幅
-  height: 761px;
-  background-color: #20C55A;
+  // height: 761px;
+  // background-color: #20C55A;
   position: relative;
   margin: 0 auto;
   text-align: end;
 
   &-deco1 {
     position: absolute;
-    width: 14%;
+    width: 12%;
     left: 0%;
     right: 84.11%;
-    top: 25.29%;
+    top: 10.29%;
   }
 
   &-deco2 {
     position: absolute;
-    width: 10%;
-    left: 88.01%;
+    width: 12%;
+    left: 82.01%;
     right: 3.59%;
-    top: 25.38%;
+    top: 9.38%;
   }
 
   &-deco3 {
@@ -197,14 +196,14 @@ h2 {
     width: 10%;
     left: 1.36%;
     right: 90.12%;
-    top: 62.91%;
+    top: 45.91%;
   }
 
   &-deco4 {
     position: absolute;
     width: 19%;
     left: 81%;
-    top: 41%;
+    top: 30%;
   }
 
   &-deco5 {
@@ -212,14 +211,14 @@ h2 {
     width: 8%;
     left: 8%;
     right: 86.77%;
-    top: 100%;
+    top: 80%;
   }
 
   &-deco6 {
     position: absolute;
-    width: 7%;
+    width: 4%;
     left: 88%;
-    top: 100%;
+    top: 80%;
   }
 
   h3 {
@@ -257,7 +256,7 @@ h2 {
   // about　下
   &-container2 {
     width: 871px;
-    height: 504px;
+    // height: 504px;
     display: flex;
     align-items: center;
     text-align: start;
@@ -287,21 +286,21 @@ h2 {
 
 //  Sponser
 .sponser {
-  width: 100vw;
+  width: 100%;
   max-width: 1170px; // コンテンツ幅
-  background-color: #20C55A;
+  // background-color: #20C55A;
+  text-align: center;
   margin: 0 auto;
-
 
   h3 {
     font-size: 47px;
     text-align: center;
+    margin-top: 50px;
   }
 
   &-sponser {
     border: solid 1px black;
-    height: 600px;
-    margin: 0 auto;
+ 
   }
 
   &-box1 {
@@ -311,20 +310,28 @@ h2 {
 
   &-box2 {
     width: 325px;
-    height: 215px;
+    height: 361px;
   }
 
   p {
-    font-size: 40px;
+    font-size: 22px;
     text-align: center;
   }
 }
 
 
 // Service
+h3{
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 100px;
+}
+
 .service {
   display: flex;
   justify-content: center;
+
 
 
   .icon1 {
