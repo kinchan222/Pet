@@ -398,7 +398,7 @@ h2 {
   font-size: 45px;
   font-weight: 700;
   text-align: center;
-  margin-top: 100px;
+  margin: 70px 0 20px;
 }
 
 .service {
@@ -437,19 +437,67 @@ h2 {
 
 }
 
-// Customer Voice
 
+
+// Customer Voice
 h3 {
   font-size: 50px;
   text-align: center;
-  padding-top: 50px;
 }
 
-
-// Customer Voice
-.vtext {
+.voice {
   margin: 15px;
-  padding: 50px;
+  width: 374px;
+  box-shadow: -15px 15px 0 #E7AFC3;
+
+}
+
+.dc {
+  max-width: 1170px; // コンテンツ幅
+  // background-color: #20C55A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+
+  // &-peple{
+  //   margin-left: 30px;
+  // }
+
+  &-7 {
+    position: absolute;
+    width: 91px;
+    top: 5%;
+    left: 1%;
+  }
+
+  &-8 {
+    position: absolute;
+    width: 222px;
+    height: 212px;
+    top: 0;
+    left: 81%;
+  }
+
+  &-9 {
+    position: absolute;
+    width: 300px;
+    height: 330px;
+    left: 0;
+    top: 41%;
+  }
+
+  &-10 {
+    position: absolute;
+    width: 92px;
+    left: 88%;
+    top:78%
+  }
+}
+
+.vtext {
+  margin-left: 80px;
 
   p {
     width: 436px;
@@ -465,66 +513,6 @@ h3 {
     font-size: 29px;
   }
 
-}
-
-
-
-
-
-.voice {
-  margin: 15px;
-  width: 374px;
-  box-shadow: -15px 15px 0 #E7AFC3;
-
-}
-
-// .v1 {
-//     display: flex;
-//     justify-content: center;
-//     position: relative;
-
-// }
-
-.dc {
-  max-width: 1170px; // コンテンツ幅
-  background-color: #20C55A;
-  display: flex;
-  margin: 0 auto;
-  width: 100vw;
-  position: relative;
-  max-width: 1170px;
-
-  &-7 {
-    position: absolute;
-    width: 111px;
-    top: 10%;
-    left: 100VW;
-  }
-
-  &-8 {
-    position: absolute;
-    width: 227px;
-    top: 0;
-    left: 74%;
-  }
-
-  &-9 {
-    width: 208px;
-    left: 0;
-    top: 40%;
-  }
-
-  &-10 {
-    width: 129px;
-  }
-
-
-
-  &-people {
-    position: absolute;
-    left: 0;
-
-  }
 }
 
 
@@ -579,12 +567,11 @@ input {
 // Company
 .company {
   max-width: 1170px; // コンテンツ幅
-  height: 100vh;
-  background-color: #20C55A;
+  // background-color: #20C55A;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  padding: 0 30px 30px;
 
   &-left {
     margin-right: 50px;
@@ -602,12 +589,6 @@ h4 {
 
 h5 {
   font-size: 20px;
-}
-
-
-.map {
-  width: 468px;
-  height: 527px;
 }
 
 input {
