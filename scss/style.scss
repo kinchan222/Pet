@@ -73,7 +73,7 @@
 
 .livers {
   &-container {
-    background-color:black;
+    background-color: black;
     max-width: 1170px; // コンテンツ幅
     // background-color: #20C55A;
     display: flex;
@@ -101,42 +101,49 @@
     width: 21%;
     margin: 5px;
   }
+
   &-main2 {
     border: solid 4.42px #A817FB;
     background-color: white;
     width: 21%;
     margin: 5px;
   }
+
   &-main3 {
     border: solid 3.15px #F0C83B;
     background-color: white;
     width: 21%;
     margin: 5px;
   }
+
   &-main4 {
     border: solid 3.79px #EA5555;
     background-color: white;
     width: 21%;
     margin: 5px;
   }
+
   &-main5 {
     border: solid 3.15px #ED61F6;
     background-color: white;
     width: 21%;
     margin: 5px;
   }
+
   &-main6 {
     border: solid 3.79px #52F1BF;
     background-color: white;
     width: 21%;
     margin: 5px;
   }
+
   &-main7 {
     border: solid 3.79px #55B0EA;
     background-color: white;
     width: 21%;
     margin: 5px;
   }
+
   &-main8 {
     border: solid 3.79px #FFB017;
     background-color: white;
@@ -155,7 +162,7 @@
   &-box8 {
     height: 210px;
     margin: 10px 5px;
-  } 
+  }
 }
 
 h2 {
@@ -298,9 +305,9 @@ h2 {
     margin-top: 50px;
   }
 
-  &-sponser {
-    border: solid 1px black;
- 
+  &-photo {
+    margin: 30px 0;
+
   }
 
   &-box1 {
@@ -321,7 +328,7 @@ h2 {
 
 
 // Service
-h3{
+h3 {
   font-size: 45px;
   font-weight: 700;
   text-align: center;
@@ -329,58 +336,96 @@ h3{
 }
 
 .service {
+  max-width: 1170px; // コンテンツ幅
+  // background-color: #20C55A;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
 
-
-
   .icon1 {
     border: 3.42px solid #9067E9;
+    box-shadow: 10px 10px 0px 0 #9067E9;
     height: 900px;
-    width: 300px;
+    width: 312px;
+    margin: 0 10px;
+    padding: 20px;
+
+    img {
+      margin-bottom: 10px;
+      width: 92px;
+    }
+
+    h6 {
+      font-size: 18px;
+      font-weight: 400;
+      padding: 10px;
+    }
+
+    p {
+      font-size: 12px;
+      font-weight: 400;
+      padding: 20px 5px;
+    }
   }
 }
 
 
 
 // Customer Voice
-
-
 .voice {
   display: flex;
   background-image: url(../img/deco_12.png);
 
 
-h3 {
+  h3 {
 
-  font-size: 50px;
-  text-align: center;
-  padding-top: 50px;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+  }
 }
-}
+
 // Contact
-
 .contact {
+  max-width: 1170px; // コンテンツ幅
+  // background-color: #20C55A;
+  margin: 0 auto;
   display: flex;
   width: 1170px;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .contact1 {
   border: solid 1px black;
   justify-content: space-around;
   height: 800px;
-  width: 400px;
-}
+  width: 365px;
+  margin: 0 20px;
 
+  .fc {
+    font-size: 28px;
+    font-weight: 700;
+    width: 170px;
+    text-align: center;
+    background: linear-gradient(transparent 70%, #FFEA02 100%);
+  }
 
-.fc {
-  border-color: #FFEA02;
-}
 
 .fl {
-  border: #20C55A;
+  font-size: 28px;
+  font-weight: 700;
+  width: 170px;
+  text-align: center;
+  background: linear-gradient(transparent 70%, #20C55A 100%);
 }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+
+
 
 .denw {
   display: flex;
@@ -397,16 +442,19 @@ h3 {
   width: 60px;
 }
 
-h5 {}
 
 .contact-wrap {
   width: 100%;
   border: solid 1px black;
   padding: 10px;
 }
+input{
+  border: solid 1px black;
+}
+
+
 
 // Company
-
 .company {
   display: flex;
   justify-content: space-around;

@@ -277,8 +277,8 @@ h2 {
   margin-top: 50px;
 }
 
-.sponser-sponser {
-  border: solid 1px black;
+.sponser-photo {
+  margin: 30px 0;
 }
 
 .sponser-box1 {
@@ -304,14 +304,36 @@ h3 {
 }
 
 .service {
+  max-width: 1170px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
 }
 
 .service .icon1 {
   border: 3.42px solid #9067E9;
+  box-shadow: 10px 10px 0px 0 #9067E9;
   height: 900px;
-  width: 300px;
+  width: 312px;
+  margin: 0 10px;
+  padding: 20px;
+}
+
+.service .icon1 img {
+  margin-bottom: 10px;
+  width: 92px;
+}
+
+.service .icon1 h6 {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px;
+}
+
+.service .icon1 p {
+  font-size: 12px;
+  font-weight: 400;
+  padding: 20px 5px;
 }
 
 .voice {
@@ -326,24 +348,39 @@ h3 {
 }
 
 .contact {
+  max-width: 1170px;
+  margin: 0 auto;
   display: flex;
   width: 1170px;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .contact1 {
   border: solid 1px black;
   justify-content: space-around;
   height: 800px;
-  width: 400px;
+  width: 365px;
+  margin: 0 20px;
 }
 
-.fc {
-  border-color: #FFEA02;
+.contact1 .fc {
+  font-size: 28px;
+  font-weight: 700;
+  width: 170px;
+  text-align: center;
+  background: linear-gradient(transparent 70%, #FFEA02 100%);
 }
 
-.fl {
-  border: #20C55A;
+.contact1 .fl {
+  font-size: 28px;
+  font-weight: 700;
+  width: 170px;
+  text-align: center;
+  background: linear-gradient(transparent 70%, #20C55A 100%);
+}
+
+.contact1 p {
+  font-size: 18px;
 }
 
 .denw {
@@ -365,6 +402,10 @@ h3 {
   width: 100%;
   border: solid 1px black;
   padding: 10px;
+}
+
+input {
+  border: solid 1px black;
 }
 
 .company {
