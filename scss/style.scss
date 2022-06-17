@@ -1,9 +1,17 @@
 .menu {
+<<<<<<< HEAD
     display: flex;
     width: 71vw;
     font-size: 3.4vh;
     justify-content: space-between;
     margin: 15px 0 0 380px;
+=======
+  display: flex;
+  width: 71vw;
+  font-size: 3.4vh;
+  justify-content: space-between;
+  margin-left: 350px;
+>>>>>>> 89b7650e9e4da12eccca3530ded781b9d6ffc01c
 }
 
 // ヘッダーのレスポンシブ
@@ -58,11 +66,19 @@
     }
 
 
+<<<<<<< HEAD
     &-box {
         position: absolute;
         width: 110VW;
 
     }
+=======
+  &-box {
+    position: absolute;
+    width: 100VW;
+    left: 20px
+  }
+>>>>>>> 89b7650e9e4da12eccca3530ded781b9d6ffc01c
 
     &-container {
         position: absolute;
@@ -142,11 +158,16 @@
         margin: 5px;
     }
 
+<<<<<<< HEAD
     &-main2 {
         border: solid 4.42px #A817FB;
         background-color: white;
         width: 21%;
         margin: 5px;
+=======
+    &-box {
+      top: 0%;
+>>>>>>> 89b7650e9e4da12eccca3530ded781b9d6ffc01c
     }
 
     &-main3 {
@@ -353,13 +374,34 @@ h2 {
     }
 }
 
+<<<<<<< HEAD
 //  Sponser
 .sponser {
+=======
+@media screen and (max-width:767px) {
+  .about {
+    &-container1, &-container2{
+      width: 319px;
+      display: block;
+    }
+    &-deco1, &-deco2,&-deco3,&-deco4,&-deco5, &-deco6{
+      display: none;
+    }
+    h4,p{
+      margin: 0;
+    }
+  }
+}
+
+  //  Sponser
+  .sponser {
+>>>>>>> 89b7650e9e4da12eccca3530ded781b9d6ffc01c
     width: 100%;
     max-width: 1170px; // コンテンツ幅
     // background-color: #20C55A;
     text-align: center;
     margin: 0 auto;
+<<<<<<< HEAD
 
     h3 {
         font-size: 47px;
@@ -391,26 +433,76 @@ h2 {
 
 // Service
 .name {
+=======
+
+    h3 {
+      font-size: 47px;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    &-photo {
+      margin: 30px 0;
+
+    }
+
+    &-box1 {
+      width: 790px;
+      height: 363px;
+    }
+
+    &-box2 {
+      width: 325px;
+      height: 361px;
+    }
+
+    p {
+      font-size: 22px;
+      text-align: center;
+    }
+  }
+
+
+  // Service
+  .name {
+>>>>>>> 89b7650e9e4da12eccca3530ded781b9d6ffc01c
     font-size: 45px;
     font-weight: 700;
     text-align: center;
     margin-top: 100px;
+<<<<<<< HEAD
 }
 
 .service {
     max-width: 1170px; // コンテンツ幅
     // background-color: #20C55A;
+=======
+  }
+
+  .service {
+    max-width: 1170px; // コンテンツ幅
+    //  background-color: #20C55A;
+>>>>>>> 89b7650e9e4da12eccca3530ded781b9d6ffc01c
     margin: 0 auto;
     display: flex;
     justify-content: center;
 
     .icon1 {
+<<<<<<< HEAD
         border: 3.42px solid #9067E9;
         box-shadow: 10px 10px 0px 0 #9067E9;
         height: 900px;
         width: 312px;
         margin: 0 10px;
         padding: 30px;
+=======
+      border: 3.42px solid #9067E9;
+      box-shadow: 10px 10px 0px 0 #9067E9;
+      height: 900px;
+      width: 312px;
+      margin: 0 10px;
+      padding: 30px;
+>>>>>>> 89b7650e9e4da12eccca3530ded781b9d6ffc01c
     }
 
 
@@ -432,9 +524,20 @@ h2 {
     }
 }
 
+// Service レスポンシブ
+  @media screen and (max-width:767px) {
+    .service {
+      display: block;
+
+      .icon1 {
+        margin: 20px auto;
+      }
+    }
+ 
+  }
 
 
-
+<<<<<<< HEAD
 // Customer Voice
 
 
@@ -537,15 +640,38 @@ h3 {
 
 // Contact
 .contact {
+=======
+  // Customer Voice
+  .voice {
+    display: flex;
+    background-image: url(../img/deco_12.png);
+
+
+    h3 {
+      font-size: 50px;
+      text-align: center;
+      padding-top: 50px;
+    }
+  }
+
+  // Contact
+  .contact {
+>>>>>>> 89b7650e9e4da12eccca3530ded781b9d6ffc01c
     max-width: 1170px; // コンテンツ幅
     // background-color: #20C55A;
     margin: 0 auto;
     display: flex;
     width: 1170px;
     justify-content: center;
+<<<<<<< HEAD
 }
 
 .contact1 {
+=======
+  }
+
+  .contact1 {
+>>>>>>> 89b7650e9e4da12eccca3530ded781b9d6ffc01c
     border: solid 1px black;
     justify-content: space-around;
     height: 800px;
@@ -553,15 +679,24 @@ h3 {
     margin: 0 20px;
 
     .fc {
+<<<<<<< HEAD
         font-size: 28px;
         font-weight: 700;
         width: 170px;
         text-align: center;
         background: linear-gradient(transparent 70%, #FFEA02 100%);
+=======
+      font-size: 28px;
+      font-weight: 700;
+      width: 170px;
+      text-align: center;
+      background: linear-gradient(transparent 70%, #FFEA02 100%);
+>>>>>>> 89b7650e9e4da12eccca3530ded781b9d6ffc01c
     }
 
 
     .fl {
+<<<<<<< HEAD
         font-size: 28px;
         font-weight: 700;
         width: 170px;
@@ -575,11 +710,27 @@ h3 {
 }
 
 .denw {
+=======
+      font-size: 28px;
+      font-weight: 700;
+      width: 170px;
+      text-align: center;
+      background: linear-gradient(transparent 70%, #20C55A 100%);
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .denw {
+>>>>>>> 89b7650e9e4da12eccca3530ded781b9d6ffc01c
     display: flex;
     width: 500px;
-}
+  }
 
 
+<<<<<<< HEAD
 .wa {
     width: 300px;
 }
@@ -620,30 +771,98 @@ h4 {
 h5 {
     font-size: 20px;
 }
+=======
+  .wa {
+    width: 300px;
+  }
+
+  .ar {
+    height: 60px;
+    width: 60px;
+  }
 
 
+  .contact-wrap {
+    width: 100%;
+    border: solid 1px black;
+    padding: 10px;
+  }
+
+  input {
+    border: solid 1px black;
+  }
+
+
+
+  // Company
+  .company {
+    max-width: 1170px; // コンテンツ幅
+    // background-color: #20C55A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    &-left{
+      margin-right: 50px;
+    }
+
+    p{
+      font-weight: 400;
+      font-size: 22px;
+    }
+  }
+
+  h4 {
+    font-size: 50px;
+  }
+>>>>>>> 89b7650e9e4da12eccca3530ded781b9d6ffc01c
+
+  h5 {
+    font-size: 20px;
+  }
+
+<<<<<<< HEAD
 input {
+=======
+.map{
+  width: 468px;
+}
+  input {
+>>>>>>> 89b7650e9e4da12eccca3530ded781b9d6ffc01c
     display: flex;
     width: 250px;
     color: black;
     text-align: center;
     padding: 15px;
 
-}
+  }
 
+<<<<<<< HEAD
 button {
+=======
+  button {
+>>>>>>> 89b7650e9e4da12eccca3530ded781b9d6ffc01c
     width: 250px;
     background-color: black;
     color: white;
     text-align: center;
     padding: 15px;
-}
+  }
 
 
-// footer
+  // footer
 
+<<<<<<< HEAD
 footer {
     background-color: black;
     color: white;
     text-align: center;
 }
+=======
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+>>>>>>> 89b7650e9e4da12eccca3530ded781b9d6ffc01c
