@@ -448,12 +448,6 @@ input {
   padding: 50px;
 }
 
-.map {
-  border: solid 1px black;
-  width: 500px;
-  height: 500px;
-}
-
 h4 {
   font-size: 50px;
 }
