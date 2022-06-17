@@ -14,7 +14,6 @@
 
   &-people {
     width: 90%;
-
   }
 
   &-container {
@@ -54,7 +53,7 @@
   &-box {
     position: absolute;
     width: 110VW;
-    
+
   }
 
   &-container {
@@ -69,30 +68,18 @@
 .content {
   background-color: black;
   width: 100vw;
-  height: 100vh;
-
-
-
+  padding: 30px;
 }
 
 .livers {
   &-container {
-    background-color:black;
+    // background-color:black;
     max-width: 1170px; // コンテンツ幅
+    background-color: #20C55A;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
-    align-items: flex-start;
-  }
-
-  &-main {
-    border: solid 3.79px #EA5555;
-    background-color: white;
-    width: 21%;
-    margin: 5px;
-
-
 
     p {
       font-size: 11px;
@@ -107,10 +94,69 @@
       margin-left: 10px;
     }
   }
-  &-box1,&-box2,&-box3,&-box4,&-box5,&-box6,&-box7,&-box8{
+
+  &-main1 {
+    border: solid 3.79px #EA5555;
+    background-color: white;
+    width: 21%;
+    margin: 5px;
+  }
+  &-main2 {
+    border: solid 4.42px #A817FB;
+    background-color: white;
+    width: 21%;
+    margin: 5px;
+  }
+  &-main3 {
+    border: solid 3.15px #F0C83B;
+    background-color: white;
+    width: 21%;
+    margin: 5px;
+  }
+  &-main4 {
+    border: solid 3.79px #EA5555;
+    background-color: white;
+    width: 21%;
+    margin: 5px;
+  }
+  &-main5 {
+    border: solid 3.15px #ED61F6;
+    background-color: white;
+    width: 21%;
+    margin: 5px;
+  }
+  &-main6 {
+    border: solid 3.79px #52F1BF;
+    background-color: white;
+    width: 21%;
+    margin: 5px;
+  }
+  &-main7 {
+    border: solid 3.79px #55B0EA;
+    background-color: white;
+    width: 21%;
+    margin: 5px;
+  }
+  &-main8 {
+    border: solid 3.79px #FFB017;
+    background-color: white;
+    width: 21%;
+    margin: 5px;
+  }
+
+ 
+
+  &-box1,
+  &-box2,
+  &-box3,
+  &-box4,
+  &-box5,
+  &-box6,
+  &-box7,
+  &-box8 {
     height: 210px;
     margin: 10px 5px;
-  }
+  } 
 }
 
 h2 {
@@ -123,74 +169,149 @@ h2 {
 
 // About
 .about {
-  position: relative;
   max-width: 1170px; // コンテンツ幅
+  height: 761px;
+  background-color: #20C55A;
+  position: relative;
+  margin: 0 auto;
+  text-align: end;
+
+  &-deco1 {
+    position: absolute;
+    width: 14%;
+    left: 0%;
+    right: 84.11%;
+    top: 25.29%;
+  }
+
+  &-deco2 {
+    position: absolute;
+    width: 10%;
+    left: 88.01%;
+    right: 3.59%;
+    top: 25.38%;
+  }
+
+  &-deco3 {
+    position: absolute;
+    width: 10%;
+    left: 1.36%;
+    right: 90.12%;
+    top: 62.91%;
+  }
+
+  &-deco4 {
+    position: absolute;
+    width: 19%;
+    left: 81%;
+    top: 41%;
+  }
+
+  &-deco5 {
+    position: absolute;
+    width: 8%;
+    left: 8%;
+    right: 86.77%;
+    top: 100%;
+  }
+
+  &-deco6 {
+    position: absolute;
+    width: 7%;
+    left: 88%;
+    top: 100%;
+  }
 
   h3 {
-    font-size: 80px;
+    font-size: 50px;
     text-align: center;
   }
 
-  &-container {
-    height: 50vh;
-    width: 100vw;
+  // about　上
+  &-container1 {
+    width: 871px;
     display: flex;
-    justify-content: center;
     align-items: center;
-
+    text-align: start;
+    margin: 0 auto;
 
     h4 {
-      width: 200px;
-      height: 24px;
       margin-bottom: 20px;
+      font-size: 28px;
+      font-weight: 400;
     }
 
     p {
-      width: 454px;
+      width: 450px;
+      font-size: 22px;
+      font-weight: 400;
     }
 
     img {
-      width: 25%;
+      width: 280px;
+      margin-left: 50px;
+      box-shadow: 15px 15px 0px 0 #F9C83B;
     }
   }
 
-  &-deco1,
-  &-deco2,
-  &-deco3,
-  &-deco4,
-  &-deco5,
-  &-deco6 {
-    position: absolute;
+  // about　下
+  &-container2 {
+    width: 871px;
+    height: 504px;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    margin: 0 auto;
 
+    h4 {
+      margin-bottom: 20px;
+      width: 436px;
+      font-size: 28px;
+      font-weight: 400;
+      margin-left: 140px;
+    }
+
+    p {
+      width: 436px;
+      font-size: 22px;
+      font-weight: 400;
+      margin-left: 140px;
+    }
+
+    img {
+      width: 280px;
+      box-shadow: -15px 15px 0px 0 #FFF835;
+    }
   }
 }
 
 //  Sponser
 .sponser {
-  height: 100vh;
   width: 100vw;
   max-width: 1170px; // コンテンツ幅
+  background-color: #20C55A;
+  margin: 0 auto;
+
 
   h3 {
-    font-size: 80px;
+    font-size: 47px;
     text-align: center;
   }
 
-  &-photo {
+  &-sponser {
+    border: solid 1px black;
     height: 600px;
-    width: 600px;
     margin: 0 auto;
   }
 
   &-box1 {
-    height: 260px;
-    width: 564px;
+    width: 790px;
+    height: 363px;
   }
 
   &-box2 {
-    height: 193px;
-    width: 232px;
-    margin: 50px 120px;
+    width: 325px;
+    height: 215px;
   }
 
   p {
@@ -201,19 +322,19 @@ h2 {
 
 
 // Service
+.service {
+  display: flex;
+  justify-content: center;
 
-.icon1{
+
+  .icon1 {
     border: 3.42px solid #9067E9;
     height: 900px;
-    width: 400px; 
-    justify-content: space-around;
+    width: 300px;
+  }
 }
 
-.service{
-    display: flex;
-    width: 1170px;
-    justify-content: space-around;
-}
+
 
 // Customer Voice
 
@@ -221,28 +342,28 @@ h2 {
 .voice {
   display: flex;
   background-image: url(../img/deco_12.png);
-}
+
 
 h3 {
 
-    font-size: 50px;
-    text-align: center;
-    padding-top: 50px;
-  }
-
+  font-size: 50px;
+  text-align: center;
+  padding-top: 50px;
+}
+}
 // Contact
 
-.contact{
-    display: flex;
-    width: 1170px;
-    justify-content: space-around;
+.contact {
+  display: flex;
+  width: 1170px;
+  justify-content: space-around;
 }
 
-.contact1{
-    border: solid 1px black;
-    justify-content: space-around;
-    height: 800px;
-    width: 400px;
+.contact1 {
+  border: solid 1px black;
+  justify-content: space-around;
+  height: 800px;
+  width: 400px;
 }
 
 
@@ -254,29 +375,27 @@ h3 {
   border: #20C55A;
 }
 
-.denw{
-    display: flex;
-    width: 400px;
-    flex-direction: column;
+.denw {
+  display: flex;
+  width: 400px;
+  flex-direction: column;
 }
 
 .wa {
   width: 300px;
 }
 
-.ar{
-    height: 60px;
-    width: 60px;
+.ar {
+  height: 60px;
+  width: 60px;
 }
 
-h5{
+h5 {}
 
-}
-
-.contact-wrap{
-    width: 100%;
-    border: solid 1px black;
-    padding: 10px;
+.contact-wrap {
+  width: 100%;
+  border: solid 1px black;
+  padding: 10px;
 }
 
 // Company
