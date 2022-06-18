@@ -19,8 +19,21 @@
   justify-content: center;
 }
 
+@media screen and (max-width: 767px) {
+  .kv {
+    display: block;
+    width: 100%;
+  }
+}
+
 .kv-people {
   width: 90%;
+}
+
+@media screen and (max-width: 767px) {
+  .kv-people {
+    display: flex;
+  }
 }
 
 .kv-container {
@@ -46,9 +59,22 @@
   margin-left: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .kv-3, .kv-2 {
+    width: 50%;
+  }
+}
+
 .kv-1, .kv-4 {
   width: 50%;
   margin-left: 350px;
+}
+
+@media screen and (max-width: 767px) {
+  .kv-1, .kv-4 {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
 .kv-box {
@@ -62,29 +88,10 @@
   left: 450px;
 }
 
-@media screen and (max-width: 767px) {
-  .kv {
-    display: block;
-    width: 100%;
-  }
-  .kv-people {
-    display: flex;
-  }
-  .kv-3, .kv-2 {
-    width: 50%;
-  }
-  .kv-1, .kv-4 {
-    width: 50%;
-    margin: 0 auto;
-  }
-  .kv-box {
-    top: 0%;
-  }
-  .content {
-    background-color: black;
-    width: 100vw;
-    padding: 30px;
-  }
+.content {
+  background-color: black;
+  width: 100vw;
+  padding: 30px;
 }
 
 .livers-container {
@@ -176,16 +183,6 @@ h2 {
   text-align: center;
   font-size: 45px;
   font-weight: 400;
-}
-
-@media screen and (max-width: 767px) {
-  .livers-container {
-    display: block;
-  }
-  .livers-main1, .livers-main2, .livers-main3, .livers-main4, .livers-main5, .livers-main6, .livers-main7, .livers-main8 {
-    width: 64%;
-    margin: 10px auto;
-  }
 }
 
 .about {
@@ -336,7 +333,7 @@ h2 {
   font-size: 45px;
   font-weight: 700;
   text-align: center;
-  margin-top: 100px;
+  margin: 70px 0 20px;
 }
 
 .service {
@@ -375,6 +372,7 @@ h2 {
 h3 {
   font-size: 50px;
   text-align: center;
+<<<<<<< HEAD
   padding-top: 50px;
 }
 
@@ -395,6 +393,8 @@ h3 {
 
 .vtext h6 {
   font-size: 29px;
+=======
+>>>>>>> 0055b5f2c468442c8741f19973d7b583bea97567
 }
 
 .voice {
@@ -404,41 +404,60 @@ h3 {
 }
 
 .dc {
-  display: flex;
-  margin: 0 auto;
-  text-align: start;
-  width: 100vw;
-  position: relative;
   max-width: 1170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
 }
 
 .dc-7 {
   position: absolute;
-  width: 111px;
-  top: 0;
-  left: 0;
+  width: 91px;
+  top: 5%;
+  left: 1%;
 }
 
 .dc-8 {
   position: absolute;
-  width: 227px;
+  width: 222px;
+  height: 212px;
   top: 0;
-  left: 100%;
+  left: 81%;
 }
 
 .dc-9 {
-  width: 208px;
+  position: absolute;
+  width: 300px;
+  height: 330px;
   left: 0;
-  top: 40%;
+  top: 41%;
 }
 
 .dc-10 {
-  width: 129px;
+  position: absolute;
+  width: 92px;
+  left: 88%;
+  top: 78%;
 }
 
-.dc-people {
-  position: absolute;
-  left: 0;
+.vtext {
+  margin-left: 80px;
+}
+
+.vtext p {
+  width: 436px;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.vtext h5 {
+  font-size: 18px;
+}
+
+.vtext h6 {
+  font-size: 29px;
 }
 
 .contact {
@@ -449,7 +468,7 @@ h3 {
   justify-content: center;
 }
 
-.contact1 {
+.contact .contact1 {
   border: solid 1px black;
   justify-content: space-around;
   height: 800px;
@@ -457,7 +476,7 @@ h3 {
   margin: 0 20px;
 }
 
-.contact1 .fc {
+.contact .contact1 .fc {
   font-size: 28px;
   font-weight: 700;
   width: 170px;
@@ -465,21 +484,12 @@ h3 {
   background: linear-gradient(transparent 70%, #FFEA02 100%);
 }
 
-.contact1 .fl {
+.contact .contact1 .fl {
   font-size: 28px;
   font-weight: 700;
   width: 170px;
   text-align: center;
   background: linear-gradient(transparent 70%, #20C55A 100%);
-}
-
-.contact1 p {
-  font-size: 18px;
-}
-
-.denw {
-  display: flex;
-  width: 500px;
 }
 
 .wa {
@@ -503,10 +513,25 @@ input {
 
 .company {
   display: flex;
+<<<<<<< HEAD
   justify-content: space-around;
   padding: 50px;
   max-width: 1170px;
   margin: auto;
+=======
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px 30px;
+}
+
+.company-left {
+  margin-right: 50px;
+}
+
+.company p {
+  font-weight: 400;
+  font-size: 22px;
+>>>>>>> 0055b5f2c468442c8741f19973d7b583bea97567
 }
 
 h4 {
