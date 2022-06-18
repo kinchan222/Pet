@@ -372,6 +372,45 @@ h2 {
   padding: 20px 5px;
 }
 
+.dc {
+  max-width: 1170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.dc-7 {
+  position: absolute;
+  width: 91px;
+  top: 5%;
+  left: 1%;
+}
+
+.dc-8 {
+  position: absolute;
+  width: 222px;
+  height: 212px;
+  top: 0;
+  left: 81%;
+}
+
+.dc-9 {
+  position: absolute;
+  width: 300px;
+  height: 330px;
+  left: 0;
+  top: 41%;
+}
+
+.dc-10 {
+  position: absolute;
+  width: 92px;
+  left: 88%;
+  top: 78%;
+}
+
 h3 {
   font-size: 50px;
   text-align: center;
@@ -401,44 +440,6 @@ h3 {
   margin: 15px;
   width: 374px;
   box-shadow: -15px 15px 0 #E7AFC3;
-}
-
-.dc {
-  display: flex;
-  margin: 0 auto;
-  text-align: start;
-  width: 100vw;
-  position: relative;
-  max-width: 1170px;
-}
-
-.dc-7 {
-  position: absolute;
-  width: 111px;
-  top: 0;
-  left: 0;
-}
-
-.dc-8 {
-  position: absolute;
-  width: 227px;
-  top: 0;
-  left: 100%;
-}
-
-.dc-9 {
-  width: 208px;
-  left: 0;
-  top: 40%;
-}
-
-.dc-10 {
-  width: 129px;
-}
-
-.dc-people {
-  position: absolute;
-  left: 0;
 }
 
 .contact {
