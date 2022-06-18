@@ -19,21 +19,8 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 767px) {
-  .kv {
-    display: block;
-    width: 100%;
-  }
-}
-
 .kv-people {
   width: 90%;
-}
-
-@media screen and (max-width: 767px) {
-  .kv-people {
-    display: flex;
-  }
 }
 
 .kv-container {
@@ -59,22 +46,9 @@
   margin-left: 20px;
 }
 
-@media screen and (max-width: 767px) {
-  .kv-3, .kv-2 {
-    width: 50%;
-  }
-}
-
 .kv-1, .kv-4 {
   width: 50%;
   margin-left: 350px;
-}
-
-@media screen and (max-width: 767px) {
-  .kv-1, .kv-4 {
-    width: 50%;
-    margin: 0 auto;
-  }
 }
 
 .kv-box {
@@ -88,10 +62,29 @@
   left: 450px;
 }
 
-.content {
-  background-color: black;
-  width: 100vw;
-  padding: 30px;
+@media screen and (max-width: 767px) {
+  .kv {
+    display: block;
+    width: 100%;
+  }
+  .kv-people {
+    display: flex;
+  }
+  .kv-3, .kv-2 {
+    width: 50%;
+  }
+  .kv-1, .kv-4 {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .kv-box {
+    top: 0%;
+  }
+  .content {
+    background-color: black;
+    width: 100vw;
+    padding: 30px;
+  }
 }
 
 .livers-container {
@@ -183,6 +176,16 @@ h2 {
   text-align: center;
   font-size: 45px;
   font-weight: 400;
+}
+
+@media screen and (max-width: 767px) {
+  .livers-container {
+    display: block;
+  }
+  .livers-main1, .livers-main2, .livers-main3, .livers-main4, .livers-main5, .livers-main6, .livers-main7, .livers-main8 {
+    width: 64%;
+    margin: 10px auto;
+  }
 }
 
 .about {
@@ -333,7 +336,7 @@ h2 {
   font-size: 45px;
   font-weight: 700;
   text-align: center;
-  margin: 70px 0 20px;
+  margin-top: 100px;
 }
 
 .service {
@@ -372,7 +375,6 @@ h2 {
 h3 {
   font-size: 50px;
   text-align: center;
-<<<<<<< HEAD
   padding-top: 50px;
 }
 
@@ -393,8 +395,6 @@ h3 {
 
 .vtext h6 {
   font-size: 29px;
-=======
->>>>>>> 0055b5f2c468442c8741f19973d7b583bea97567
 }
 
 .voice {
@@ -404,134 +404,144 @@ h3 {
 }
 
 .dc {
-  max-width: 1170px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0 auto;
+  text-align: start;
+  width: 100vw;
   position: relative;
+  max-width: 1170px;
 }
 
 .dc-7 {
   position: absolute;
-  width: 91px;
-  top: 5%;
-  left: 1%;
+  width: 111px;
+  top: 0;
+  left: 0;
 }
 
 .dc-8 {
   position: absolute;
-  width: 222px;
-  height: 212px;
+  width: 227px;
   top: 0;
-  left: 81%;
+  left: 100%;
 }
 
 .dc-9 {
-  position: absolute;
-  width: 300px;
-  height: 330px;
+  width: 208px;
   left: 0;
-  top: 41%;
+  top: 40%;
 }
 
 .dc-10 {
+  width: 129px;
+}
+
+.dc-people {
   position: absolute;
-  width: 92px;
-  left: 88%;
-  top: 78%;
-}
-
-.vtext {
-  margin-left: 80px;
-}
-
-.vtext p {
-  width: 436px;
-  font-size: 21px;
-  font-weight: 400;
-}
-
-.vtext h5 {
-  font-size: 18px;
-}
-
-.vtext h6 {
-  font-size: 29px;
+  left: 0;
 }
 
 .contact {
-  max-width: 1170px;
-  margin: 0 auto;
   display: flex;
-  width: 1170px;
+  margin: 0 auto;
+  max-width: 1170px;
   justify-content: center;
 }
 
-.contact .contact1 {
-  border: solid 1px black;
-  justify-content: space-around;
-  height: 800px;
-  width: 365px;
-  margin: 0 20px;
-}
-
-.contact .contact1 .fc {
-  font-size: 28px;
-  font-weight: 700;
-  width: 170px;
-  text-align: center;
-  background: linear-gradient(transparent 70%, #FFEA02 100%);
-}
-
-.contact .contact1 .fl {
-  font-size: 28px;
-  font-weight: 700;
-  width: 170px;
-  text-align: center;
-  background: linear-gradient(transparent 70%, #20C55A 100%);
-}
-
-.wa {
-  width: 300px;
-}
-
-.ar {
-  height: 60px;
-  width: 60px;
+.contact-1 {
+  margin: 0 10px;
 }
 
 .contact-wrap {
-  width: 100%;
-  border: solid 1px black;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
-input {
-  border: solid 1px black;
+.contact-wrap input,
+.contact-wrap textarea {
+  width: 370px;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.contact-wrap textarea {
+  width: 370px;
+}
+
+.contact-wrap button {
+  width: 370px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.contact-wrap label {
+  display: block;
+  font-size: 18px;
+}
+
+.contact-wrap input {
+  margin: .4rem 0;
+  color: solid 1px black;
+  border: 1.43px solid #000000;
+}
+
+.contact .fc {
+  text-align: center;
+  font-size: 29px;
+  background: linear-gradient(transparent 90%, #FFEA02 50%);
+  bottom: -3px;
+  width: 50%;
+}
+
+.contact p {
+  font-size: 18px;
+  padding: 20px;
+}
+
+.contact .fl {
+  text-align: center;
+  font-size: 29px;
+  background: linear-gradient(transparent 90%, #20C55A 50%);
+  bottom: 5px;
+  width: 40%;
+}
+
+.contact .ar {
+  width: 47px;
+}
+
+.contact .wa {
+  width: 366px;
+}
+
+.contact .denw {
+  margin: auto;
+}
+
+.contact-2 {
+  margin-left: 3%;
+  margin-top: 2%;
+  width: 2px;
+  height: 672px;
+  background-color: black;
+  float: left;
+}
+
+.contact-3 {
+  width: 40%;
+  float: left;
+  margin-left: 3%;
 }
 
 .company {
   display: flex;
-<<<<<<< HEAD
   justify-content: space-around;
   padding: 50px;
   max-width: 1170px;
   margin: auto;
-=======
-  justify-content: center;
-  align-items: center;
-  padding: 0 30px 30px;
-}
-
-.company-left {
-  margin-right: 50px;
-}
-
-.company p {
-  font-weight: 400;
-  font-size: 22px;
->>>>>>> 0055b5f2c468442c8741f19973d7b583bea97567
 }
 
 h4 {
@@ -540,22 +550,6 @@ h4 {
 
 h5 {
   font-size: 20px;
-}
-
-input {
-  display: flex;
-  width: 250px;
-  color: black;
-  text-align: center;
-  padding: 15px;
-}
-
-button {
-  width: 250px;
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 15px;
 }
 
 footer {
