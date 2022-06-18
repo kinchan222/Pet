@@ -458,51 +458,7 @@ h3 {
 
 }
 
-<<<<<<< HEAD
 
-
-.dc {
-    display: flex;
-    margin: 0 auto;
-    text-align: start;
-    width: 100vw;
-    position: relative;
-    max-width: 1170px;
-
-
-    // position: relative;
-    &-7 {
-        position: absolute;
-        width: 111px;
-        top: 0;
-        left: 0;
-    }
-
-    &-8 {
-        position: absolute;
-        width: 227px;
-        top: 0;
-        left: 100%;
-    }
-
-    &-9 {
-        width: 208px;
-        left: 0;
-        top: 40%;
-    }
-
-    &-10 {
-        width: 129px;
-    }
-
-
-
-    &-people {
-        position: absolute;
-        left: 0;
-
-
-=======
 .dc {
   max-width: 1170px; // コンテンツ幅
   // background-color: #20C55A;
@@ -546,7 +502,7 @@ h3 {
     top: 78%
   }
 }
->>>>>>> 0055b5f2c468442c8741f19973d7b583bea97567
+
 
 .vtext {
   margin-left: 80px;
