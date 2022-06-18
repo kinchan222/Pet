@@ -449,7 +449,7 @@ h3 {
   justify-content: center;
 }
 
-.contact1 {
+.contact .contact1 {
   border: solid 1px black;
   justify-content: space-around;
   height: 800px;
@@ -457,12 +457,20 @@ h3 {
   margin: 0 20px;
 }
 
-.contact1 .fc {
+.contact .contact1 .fc {
   font-size: 28px;
   font-weight: 700;
   width: 170px;
   text-align: center;
   background: linear-gradient(transparent 70%, #FFEA02 100%);
+}
+
+.contact .contact1 .fl {
+  font-size: 28px;
+  font-weight: 700;
+  width: 170px;
+  text-align: center;
+  background: linear-gradient(transparent 70%, #20C55A 100%);
 }
 
 .wa {

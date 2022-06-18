@@ -492,7 +492,7 @@ h3 {
     position: absolute;
     width: 92px;
     left: 88%;
-    top:78%
+    top: 78%
   }
 }
 
@@ -524,21 +524,30 @@ h3 {
   display: flex;
   width: 1170px;
   justify-content: center;
-}
 
-.contact1 {
-  border: solid 1px black;
-  justify-content: space-around;
-  height: 800px;
-  width: 365px;
-  margin: 0 20px;
 
-  .fc {
-    font-size: 28px;
-    font-weight: 700;
-    width: 170px;
-    text-align: center;
-    background: linear-gradient(transparent 70%, #FFEA02 100%);
+  .contact1 {
+    border: solid 1px black;
+    justify-content: space-around;
+    height: 800px;
+    width: 365px;
+    margin: 0 20px;
+
+    .fc {
+      font-size: 28px;
+      font-weight: 700;
+      width: 170px;
+      text-align: center;
+      background: linear-gradient(transparent 70%, #FFEA02 100%);
+    }
+    
+    .fl{
+      font-size: 28px;
+      font-weight: 700;
+      width: 170px;
+      text-align: center;
+      background: linear-gradient(transparent 70%, #20C55A 100%);
+    }
   }
 }
 
