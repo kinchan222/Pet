@@ -11,6 +11,7 @@
   }
 }
 
+
 // ***************   ヘッダー   *************** 
 .menu {
   display: flex;
@@ -49,55 +50,58 @@
   &-container {
     position: relative;
 
-    p {
-      font-size: 32px;
-    }
-
-    h1 {
-      font-size: 70px;
-      font-weight: 400;
-    }
-
-    h2 {
-      font-size: 27px;
-      text-align: start;
-    }
+  p {
+    font-size: 32px;
   }
 
-  &-3,
-  &-2 {
-    width: 50%;
-    margin-left: 20px;
-
-    @include sp-screen {
-      width: 50%;
-    }
+  h1 {
+    font-size: 70px;
+    font-weight: 400;
   }
 
-  &-1,
-  &-4 {
-    width: 50%;
-    margin-left: 350px;
-
-    @include sp-screen {
-      width: 50%;
-      margin: 0 auto;
-    }
+  h2 {
+    font-size: 27px;
+    text-align: start;
   }
-
-  &-box {
-    position: absolute;
-    width: 100VW;
-    left: 20px 
+  @include sp-screen {
+    position: static;
   }
 }
 
+&-3,
+&-2 {
+  width: 50%;
+  margin-left: 20px;
 
-  &-container {
-    position: absolute;
-    top: 280px;
-    left: 450px;
+  @include sp-screen {
+    width: 50%;
   }
+}
+
+&-1,
+&-4 {
+  width: 50%;
+  margin-left: 350px;
+
+  @include sp-screen {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+&-box {
+  position: absolute;
+  width: 100VW;
+  left: 20px
+}
+}
+
+
+&-container {
+  position: absolute;
+  top: 280px;
+  left: 450px;
+}
 
 // ***************    Livers    *************** 
 .content {
@@ -234,6 +238,10 @@ h2 {
   margin: 0 auto;
   text-align: end;
 
+  @include sp-screen {
+    position: static;
+  }
+
   &-deco1 {
     position: absolute;
     width: 12%;
@@ -293,6 +301,7 @@ h2 {
     text-align: start;
     margin: 0 auto;
 
+
     h4 {
       margin-bottom: 20px;
       font-size: 28px;
@@ -339,6 +348,16 @@ h2 {
     img {
       width: 280px;
       box-shadow: -15px 15px 0px 0 #FFF835;
+    }
+  }
+}
+
+.about {
+
+  &-container1,
+  &-container2 {
+    @include sp-screen {
+      display: block;
     }
   }
 }
