@@ -1,3 +1,17 @@
+// ***************   レスポンシブ設定   *************** 
+@mixin sp-screen {
+  @media screen and (max-width:767px) {
+    @content;
+  }
+}
+
+@mixin tab-screen {
+  @media screen and (max-width:1170px) {
+    @content;
+  }
+}
+
+// ***************   ヘッダー   *************** 
 .menu {
   display: flex;
   width: 71vw;
@@ -5,29 +19,35 @@
   justify-content: space-between;
   margin-left: 350px;
 
-}
-
-// ヘッダーのレスポンシブ
-@media screen and (max-width:767px) {
-  .menu {
+  // ヘッダーのレスポンシブ
+  @include sp-screen {
     display: block;
     display: none;
   }
 }
 
+// ***************   kv   *************** 
 .kv {
   display: flex;
   // border: solid 1px black;
   width: 100vw;
   justify-content: center;
 
+  @include sp-screen {
+    display: block;
+    width: 100%;
+  }
+
   &-people {
     width: 90%;
+
+    @include sp-screen {
+      display: flex;
+    }
   }
 
   &-container {
     position: relative;
-
 
     p {
       font-size: 32px;
@@ -42,7 +62,6 @@
       font-size: 27px;
       text-align: start;
     }
-
   }
 
   &-3,
@@ -50,21 +69,28 @@
     width: 50%;
     margin-left: 20px;
 
+    @include sp-screen {
+      width: 50%;
+    }
   }
 
   &-1,
   &-4 {
     width: 50%;
     margin-left: 350px;
+
+    @include sp-screen {
+      width: 50%;
+      margin: 0 auto;
+    }
   }
-
-
 
   &-box {
     position: absolute;
     width: 100VW;
-    left: 20px
+    left: 20px 
   }
+}
 
 
   &-container {
@@ -72,43 +98,12 @@
     top: 280px;
     left: 450px;
   }
-}
 
-// kvのレスポンシブ
-@media screen and (max-width:767px) {
-  .kv {
-    display: block;
-    width: 100%;
-
-    &-people {
-      display: flex;
-    }
-
-    &-3,
-    &-2 {
-      width: 50%;
-    }
-
-    &-1,
-    &-4 {
-      width: 50%;
-      margin: 0 auto;
-    }
-
-    &-box {
-      top: 0%;
-    }
-  }
-
-
-
-
-  // Livers 
-  .content {
-    background-color: black;
-    width: 100vw;
-    padding: 30px;
-  }
+// ***************    Livers    *************** 
+.content {
+  background-color: black;
+  width: 100vw;
+  padding: 30px;
 }
 
 .livers {
@@ -121,6 +116,11 @@
     justify-content: center;
     margin: 0 auto;
     padding: 20px 0;
+
+    @include sp-screen {
+      display: block;
+    }
+
 
     p {
       font-size: 11px;
@@ -141,6 +141,10 @@
     background-color: white;
     width: 21%;
     margin: 5px;
+
+    @include sp-screen {
+      width: 0;
+    }
   }
 
   &-main2 {
@@ -204,6 +208,11 @@
   &-box8 {
     height: 210px;
     margin: 10px 5px;
+
+    @include sp-screen {
+      width: 64%;
+      margin: 10px auto;
+    }
   }
 
 }
@@ -216,29 +225,7 @@ h2 {
 }
 
 
-// Liversレスポンシブ
-@media screen and (max-width:767px) {
-  .livers {
-    &-container {
-      display: block;
-    }
-
-    &-main1,
-    &-main2,
-    &-main3,
-    &-main4,
-    &-main5,
-    &-main6,
-    &-main7,
-    &-main8 {
-      width: 64%;
-      margin: 10px auto;
-    }
-  }
-}
-
-
-// About
+// *************** 　About　　*************** 
 .about {
   max-width: 1170px; // コンテンツ幅
   // height: 761px;
@@ -357,7 +344,7 @@ h2 {
 }
 
 
-//  Sponser
+// ***************  Sponser　　*************** 
 .sponser {
   width: 100%;
   max-width: 1170px; // コンテンツ幅
@@ -393,7 +380,7 @@ h2 {
 }
 
 
-// Service
+//***************  Service　*************** 
 .name {
   font-size: 45px;
   font-weight: 700;
@@ -439,7 +426,7 @@ h2 {
 
 
 
-// Customer Voice
+// *************** 　　Customer Voice　　*************** 
 h3 {
   font-size: 50px;
   text-align: center;
@@ -516,7 +503,7 @@ h3 {
 }
 
 
-// Contact
+// *************** 　Contact　　*************** 
 .contact {
   max-width: 1170px; // コンテンツ幅
   // background-color: #20C55A;
@@ -540,8 +527,8 @@ h3 {
       text-align: center;
       background: linear-gradient(transparent 70%, #FFEA02 100%);
     }
-    
-    .fl{
+
+    .fl {
       font-size: 28px;
       font-weight: 700;
       width: 170px;
@@ -573,7 +560,7 @@ input {
 
 
 
-// Company
+// *************** 　Company　　*************** 
 .company {
   max-width: 1170px; // コンテンツ幅
   // background-color: #20C55A;
