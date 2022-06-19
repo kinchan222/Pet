@@ -29,6 +29,7 @@
 
 // ***************   kv   *************** 
 .kv {
+
   display: flex;
   // border: solid 1px black;
   width: 100vw;
@@ -110,6 +111,11 @@
   background-color: black;
   width: 100vw;
   padding: 30px;
+
+    // アニメーション
+    animation-name: fadeInDown;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
 
 .livers {
