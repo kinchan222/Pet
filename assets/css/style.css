@@ -3,7 +3,7 @@
   width: 71vw;
   font-size: 3.4vh;
   justify-content: space-between;
-  margin-left: 350px;
+  margin: 20px 350px;
 }
 
 @media screen and (max-width: 767px) {
@@ -22,8 +22,7 @@
 }
 
 .kv-people {
-  background-color: #20C55A;
-  width: 23%;
+  width: 25%;
 }
 
 .kv-box {
@@ -276,9 +275,11 @@ h2 {
   top: 80%;
 }
 
-.about h3 {
-  font-size: 50px;
+.name {
+  font-size: 47px;
   text-align: center;
+  font-weight: 400;
+  margin-top: 50px;
 }
 
 .sponser {
@@ -286,12 +287,6 @@ h2 {
   max-width: 1170px;
   text-align: center;
   margin: 0 auto;
-}
-
-.sponser h3 {
-  font-size: 47px;
-  text-align: center;
-  margin-top: 50px;
 }
 
 .sponser-photo {
@@ -399,7 +394,7 @@ h2 {
   top: 78%;
 }
 
-h3 {
+.name {
   font-size: 50px;
   text-align: center;
   padding-top: 50px;
