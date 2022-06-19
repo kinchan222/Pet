@@ -5,11 +5,11 @@
     }
 }
 
-@mixin tab-screen {
-    @media screen and (max-width:1170px) {
-        @content;
-    }
-}
+// @mixin tab-screen {
+//     @media screen and (max-width:1170px) {
+//         @content;
+//     }
+// }
 
 
 // ***************   ヘッダー   *************** 
@@ -29,81 +29,59 @@
 
 // ***************   kv   *************** 
 .kv {
-    display: flex;
-    // border: solid 1px black;
-    width: 100vw;
-    justify-content: center;
+  // display: flex;
+  background-color: #20C55A;
+  width: 100vw;
+  justify-content: center;
 
-    @include sp-screen {
-        display: block;
-        width: 100%;
+
+  &-people {
+    width: 90%;
+
+    &-3,
+    &-2 {
+      width: 50%;
+      margin-left: 20px;
     }
 
-    &-people {
-        width: 90%;
+    &-1,
+    &-4 {
+      width: 50%;
+      margin-left: 350px;
     }
 
-    @include sp-screen {
-        display: flex;
+  }
+
+  &-container {
+    position: relative;
+
+    p {
+      font-size: 32px;
     }
 
-
-    &-container {
-        position: relative;
-
-        @include sp-screen {
-            position: static;
-        }
-
-        p {
-            font-size: 32px;
-        }
-
-        h1 {
-            font-size: 70px;
-            font-weight: 400;
-        }
-
-        h2 {
-            font-size: 27px;
-            text-align: start;
-        }
-
-        &-3,
-        &-2 {
-            width: 50%;
-            margin-left: 20px;
-
-            @include sp-screen {
-                width: 50%;
-            }
-        }
-
-        &-1,
-        &-4 {
-            width: 50%;
-            margin-left: 350px;
-
-            @include sp-screen {
-                width: 50%;
-                margin: 0 auto;
-            }
-        }
-
-        &-box {
-            position: absolute;
-            width: 100VW;
-            left: 20px
-        }
+    h1 {
+      font-size: 70px;
+      font-weight: 400;
     }
+
+    h2 {
+      font-size: 27px;
+      text-align: start;
+    }
+
+    &-box {
+      position: absolute;
+      width: 100VW;
+      left: 20px
+    }
+  }
 }
 
 &-container {
-    position: absolute;
-    top: 280px;
-    left: 450px;
+  position: absolute;
+  top: 280px;
+  left: 450px;
 }
-
 
 // ***************    Livers    *************** 
 .content {
