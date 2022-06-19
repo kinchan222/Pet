@@ -548,8 +548,8 @@
 
 
     &-wrap {
-      display: flex;
-      flex-direction: column;
+        
+
 
       input,
       textarea {
@@ -583,6 +583,10 @@
         border: 1.43px solid #000000;
       }
 
+      #cmnt{
+          width: 374px;
+          height: 194px;
+      }
     }
 
 
