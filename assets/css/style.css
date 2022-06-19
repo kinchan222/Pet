@@ -13,6 +13,53 @@
   }
 }
 
+.kv {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  position: relative;
+}
+
+.kv-people {
+  width: 90%;
+}
+
+.kv-people-3, .kv-people-2 {
+  width: 50%;
+  margin-left: 20px;
+}
+
+.kv-people-1, .kv-people-4 {
+  width: 50%;
+  margin-left: 350px;
+}
+
+.kv-box {
+  position: relative;
+  width: 100VW;
+  left: 20px;
+}
+
+.kv-container {
+  position: absolute;
+  top: 280px;
+  left: 450px;
+}
+
+.kv-container p {
+  font-size: 32px;
+}
+
+.kv-container h1 {
+  font-size: 70px;
+  font-weight: 400;
+}
+
+.kv-container h2 {
+  font-size: 27px;
+  text-align: start;
+}
+
 .content {
   background-color: black;
   width: 100vw;
@@ -447,7 +494,6 @@ h3 {
 }
 
 .contact .fc {
-  text-align: center;
   font-size: 29px;
   background: linear-gradient(transparent 90%, #FFEA02 50%);
   bottom: -3px;
@@ -461,11 +507,10 @@ h3 {
 }
 
 .contact .fl {
-  text-align: center;
   font-size: 29px;
   background: linear-gradient(transparent 90%, #20C55A 50%);
-  bottom: 5px;
-  width: 40%;
+  bottom: -3px;
+  width: 50%;
 }
 
 .contact .ar {

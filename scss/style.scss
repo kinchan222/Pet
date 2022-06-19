@@ -29,58 +29,50 @@
 
 // ***************   kv   *************** 
 .kv {
-  // display: flex;
-  background-color: #20C55A;
-  width: 100vw;
-  justify-content: center;
-
-
-  &-people {
-    width: 90%;
+    display: flex;
+    border: solid 1px black;
+    width: 100vw;
+    justify-content: center;
+    position: relative;
 
     &-3,
     &-2 {
-      width: 50%;
-      margin-left: 20px;
+        width: 50%;
+        margin-left: 20px;
     }
 
     &-1,
     &-4 {
-      width: 50%;
-      margin-left: 350px;
-    }
-
-  }
-
-  &-container {
-    position: relative;
-
-    p {
-      font-size: 32px;
-    }
-
-    h1 {
-      font-size: 70px;
-      font-weight: 400;
-    }
-
-    h2 {
-      font-size: 27px;
-      text-align: start;
+        width: 50%;
+        margin-left: 350px;
     }
 
     &-box {
-      position: absolute;
-      width: 100VW;
-      left: 20px
-    }
-  }
-}
+        position: absolute;
+        width: 100VW;
+        left: 20px 
+        
+        &-container {
+            position: absolute;
+            top: 280px;
+            left: 450px;
 
-&-container {
-  position: absolute;
-  top: 280px;
-  left: 450px;
+            p {
+                font-size: 32px;
+            }
+
+            h1 {
+                font-size: 70px;
+                font-weight: 400;
+            }
+
+            h2 {
+                font-size: 27px;
+                text-align: start;
+            }
+
+        }
+    }
 }
 
 // ***************    Livers    *************** 
@@ -524,7 +516,7 @@ h3 {
 
     &-1 {
         margin: 0 10px;
-        
+
     }
 
 
@@ -567,7 +559,7 @@ h3 {
 
 
     }
-    
+
 
 
     .fc {
@@ -602,10 +594,10 @@ h3 {
 
     .denw {
         display: flex;
-        
 
-        
-        
+
+
+
 
     }
 
@@ -628,10 +620,10 @@ h3 {
 
 
 @include sp-screen {
-    .contact{
+    .contact {
         flex-direction: column;
     }
-    
+
 
 }
 
