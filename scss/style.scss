@@ -456,6 +456,11 @@
     margin: 0 auto;
     position: relative;
 
+    @include sp-screen {
+      display: block;
+      position: static;
+    }
+
 
 
     // position: relative;
