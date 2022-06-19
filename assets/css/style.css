@@ -3,7 +3,7 @@
   width: 71vw;
   font-size: 3.4vh;
   justify-content: space-between;
-  margin: 15px 0 0 380px;
+  margin-left: 350px;
 }
 
 @media screen and (max-width: 767px) {

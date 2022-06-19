@@ -1,16 +1,24 @@
+// ***************   レスポンシブ設定   *************** 
 @mixin sp-screen {
   @media screen and (max-width:767px) {
     @content;
   }
 }
 
-// ********** ヘッダー　********** 
+@mixin tab-screen {
+  @media screen and (max-width:1170px) {
+    @content;
+  }
+}
+
+
+// ***************   ヘッダー   *************** 
 .menu {
   display: flex;
   width: 71vw;
   font-size: 3.4vh;
   justify-content: space-between;
-  margin: 15px 0 0 380px;
+  margin-left: 350px;
 
   // ヘッダーのレスポンシブ
   @include sp-screen {
@@ -19,20 +27,32 @@
   }
 }
 
-// ********** kv ********** 
+// ***************   kv   *************** 
 .kv {
   display: flex;
   // border: solid 1px black;
   width: 100vw;
   justify-content: center;
 
+  @include sp-screen {
+    display: block;
+    width: 100%;
+  }
+
   &-people {
     width: 90%;
+
+    @include sp-screen {
+      display: flex;
+    }
   }
 
   &-container {
     position: relative;
 
+    @include sp-screen {
+      position: static;
+    }
 
     p {
       font-size: 32px;
@@ -48,68 +68,47 @@
       text-align: start;
     }
 
-  }
-
-  &-3,
-  &-2 {
-    width: 50%;
-    margin-left: 20px;
-
-  }
-
-  &-1,
-  &-4 {
-    width: 50%;
-    margin-left: 350px;
-  }
-
-
-  &-box {
-    position: absolute;
-    width: 110VW;
-
-  }
-
-  &-container {
-    position: absolute;
-    top: 280px;
-    left: 450px;
-  }
-}
-
-// kvのレスポンシブ
-@media screen and (max-width:767px) {
-  .kv {
-    display: block;
-    width: 100%;
-
-    &-people {
-      display: flex;
-    }
-
     &-3,
     &-2 {
       width: 50%;
+      margin-left: 20px;
+
+      @include sp-screen {
+        width: 50%;
+      }
     }
 
     &-1,
     &-4 {
       width: 50%;
-      margin: 0 auto;
+      margin-left: 350px;
+
+      @include sp-screen {
+        width: 50%;
+        margin: 0 auto;
+      }
     }
 
     &-box {
-      top: 0%;
+      position: absolute;
+      width: 100VW;
+      left: 20px 
     }
   }
+}
+
+&-container {
+  position: absolute;
+  top: 280px;
+  left: 450px;
+}
 
 
-  // ********** Livers ********** 
-  .content {
-    background-color: black;
-    width: 100vw;
-    padding: 30px;
-  }
+// ***************    Livers    *************** 
+.content {
+  background-color: black;
+  width: 100vw;
+  padding: 30px;
 }
 
 .livers {
@@ -122,6 +121,11 @@
     justify-content: center;
     margin: 0 auto;
     padding: 20px 0;
+
+    @include sp-screen {
+      display: block;
+    }
+
 
     p {
       font-size: 11px;
@@ -142,6 +146,10 @@
     background-color: white;
     width: 21%;
     margin: 5px;
+
+    @include sp-screen {
+      width: 0;
+    }
   }
 
   &-main2 {
@@ -149,6 +157,7 @@
     background-color: white;
     width: 21%;
     margin: 5px;
+
   }
 
   &-main3 {
@@ -204,7 +213,13 @@
   &-box8 {
     height: 210px;
     margin: 10px 5px;
+
+    @include sp-screen {
+      width: 64%;
+      margin: 10px auto;
+    }
   }
+
 }
 
 h2 {
@@ -215,29 +230,7 @@ h2 {
 }
 
 
-// Liversレスポンシブ
-@media screen and (max-width:767px) {
-  .livers {
-    &-container {
-      display: block;
-    }
-
-    &-main1,
-    &-main2,
-    &-main3,
-    &-main4,
-    &-main5,
-    &-main6,
-    &-main7,
-    &-main8 {
-      width: 64%;
-      margin: 10px auto;
-    }
-  }
-}
-
-
-// About
+// *************** 　About　　*************** 
 .about {
   max-width: 1170px; // コンテンツ幅
   // height: 761px;
@@ -245,6 +238,10 @@ h2 {
   position: relative;
   margin: 0 auto;
   text-align: end;
+
+  @include sp-screen {
+    position: static;
+  }
 
   &-deco1 {
     position: absolute;
@@ -305,6 +302,7 @@ h2 {
     text-align: start;
     margin: 0 auto;
 
+
     h4 {
       margin-bottom: 20px;
       font-size: 28px;
@@ -354,6 +352,17 @@ h2 {
     }
   }
 }
+
+.about {
+
+  &-container1,
+  &-container2 {
+    @include sp-screen {
+      display: block;
+    }
+  }
+}
+
 
 //  Sponser
 .sponser {
