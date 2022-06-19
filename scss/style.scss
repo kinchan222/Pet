@@ -36,9 +36,20 @@
     padding: 0 30px;
     position: relative;
 
+    @include sp-screen {
+        display: block;
+        padding: 0;
+    }
+
     &-people {
         // background-color: #20C55A;
         width: 25%;
+
+        @include sp-screen {
+            display: flex;
+            width: 100%;
+            
+        }
 
     }
 
@@ -47,12 +58,20 @@
         width: 100%;
         height: 100%;
         left: 0px;
+
+        @include sp-screen {
+            position: static;
+         }
     }
 
     &-container {
         position: absolute;
         top: 100px;
         left: 400px;
+
+        @include sp-screen {
+           left: 0;
+        }
 
         p {
             font-size: 32px;
@@ -116,9 +135,6 @@
         width: 21%;
         margin: 5px;
 
-        @include sp-screen {
-            width: 0;
-        }
     }
 
     &-main2 {
@@ -170,7 +186,11 @@
         width: 21%;
         margin: 5px;
     }
-
+    &-main1,&-main2,&-main3,&-main4,&-main5,&-main6,&-main6,&-main7,&-main8{
+        @include sp-screen {
+            width: 100%;
+        }
+    }
 
     &-box1,
     &-box2,
@@ -208,6 +228,10 @@ h2 {
     margin: 0 auto;
     text-align: end;
 
+    @include sp-screen {
+        position: static;
+    }
+
     // about　上
     &-container1 {
         width: 871px;
@@ -215,6 +239,12 @@ h2 {
         align-items: center;
         text-align: start;
         margin: 0 auto;
+
+        @include sp-screen {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
 
     }
 
@@ -228,12 +258,20 @@ h2 {
         width: 450px;
         font-size: 22px;
         font-weight: 400;
+
+        @include sp-screen {
+            text-align: start;
+        }
     }
 
     .about_01 {
         width: 280px;
         margin-left: 50px;
         box-shadow: 15px 15px 0px 0 #F9C83B;
+
+        @include sp-screen {
+            margin: 0;
+        }
     }
 
 
@@ -246,12 +284,22 @@ h2 {
         text-align: start;
         margin: 0 auto;
 
+        @include sp-screen {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
         h4 {
             margin-bottom: 20px;
             width: 436px;
             font-size: 28px;
             font-weight: 400;
             margin-left: 140px;
+
+            @include sp-screen {
+                margin: 0;
+            }
         }
 
         p {
@@ -259,6 +307,11 @@ h2 {
             font-size: 22px;
             font-weight: 400;
             margin-left: 140px;
+
+            @include sp-screen {
+                margin: 0;
+                text-align: start;
+            }
         }
 
         .about_02 {
@@ -368,6 +421,10 @@ h2 {
     display: flex;
     justify-content: center;
 
+    @include sp-screen {
+        display: block;
+    }
+
     .icon1 {
         border: 3.42px solid #9067E9;
         box-shadow: 10px 10px 0px 0 #9067E9;
@@ -375,6 +432,10 @@ h2 {
         width: 312px;
         margin: 0 10px;
         padding: 30px;
+
+        @include sp-screen {
+            margin: 0 auto;
+        }
     }
 
 
@@ -400,6 +461,7 @@ h2 {
 
 
 // Customer Voice
+
 .dc {
     max-width: 1170px;
     display: flex;
@@ -412,8 +474,6 @@ h2 {
         display: block;
         position: static;
     }
-
-
 
     // position: relative;
     &-7 {
@@ -460,6 +520,10 @@ h2 {
     margin: 15px;
     padding: 50px;
 
+    @include sp-screen {
+        margin: 0;
+    }
+
     p {
         width: 436px;
         font-size: 21px;
@@ -481,6 +545,10 @@ h2 {
     margin: 15px;
     width: 374px;
     box-shadow: -15px 15px 0 #E7AFC3;
+
+    @include sp-screen {
+        margin: 0 auto;
+    }
 
 }
 

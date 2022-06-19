@@ -21,8 +21,22 @@
   position: relative;
 }
 
+@media screen and (max-width: 767px) {
+  .kv {
+    display: block;
+    padding: 0;
+  }
+}
+
 .kv-people {
   width: 25%;
+}
+
+@media screen and (max-width: 767px) {
+  .kv-people {
+    display: flex;
+    width: 100%;
+  }
 }
 
 .kv-box {
@@ -32,10 +46,22 @@
   left: 0px;
 }
 
+@media screen and (max-width: 767px) {
+  .kv-box {
+    position: static;
+  }
+}
+
 .kv-container {
   position: absolute;
   top: 100px;
   left: 400px;
+}
+
+@media screen and (max-width: 767px) {
+  .kv-container {
+    left: 0;
+  }
 }
 
 .kv-container p {
@@ -94,12 +120,6 @@
   margin: 5px;
 }
 
-@media screen and (max-width: 767px) {
-  .livers-main1 {
-    width: 0;
-  }
-}
-
 .livers-main2 {
   border: solid 4.42px #A817FB;
   background-color: white;
@@ -149,6 +169,12 @@
   margin: 5px;
 }
 
+@media screen and (max-width: 767px) {
+  .livers-main1, .livers-main2, .livers-main3, .livers-main4, .livers-main5, .livers-main6, .livers-main6, .livers-main7, .livers-main8 {
+    width: 100%;
+  }
+}
+
 .livers-box1, .livers-box2, .livers-box3, .livers-box4, .livers-box5, .livers-box6, .livers-box7, .livers-box8 {
   height: 210px;
   margin: 10px 5px;
@@ -175,12 +201,26 @@ h2 {
   text-align: end;
 }
 
+@media screen and (max-width: 767px) {
+  .about {
+    position: static;
+  }
+}
+
 .about-container1 {
   width: 871px;
   display: flex;
   align-items: center;
   text-align: start;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .about-container1 {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .about h4 {
@@ -195,10 +235,22 @@ h2 {
   font-weight: 400;
 }
 
+@media screen and (max-width: 767px) {
+  .about p {
+    text-align: start;
+  }
+}
+
 .about .about_01 {
   width: 280px;
   margin-left: 50px;
   box-shadow: 15px 15px 0px 0 #F9C83B;
+}
+
+@media screen and (max-width: 767px) {
+  .about .about_01 {
+    margin: 0;
+  }
 }
 
 .about-container2 {
@@ -209,6 +261,14 @@ h2 {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 767px) {
+  .about-container2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .about-container2 h4 {
   margin-bottom: 20px;
   width: 436px;
@@ -217,11 +277,24 @@ h2 {
   margin-left: 140px;
 }
 
+@media screen and (max-width: 767px) {
+  .about-container2 h4 {
+    margin: 0;
+  }
+}
+
 .about-container2 p {
   width: 436px;
   font-size: 22px;
   font-weight: 400;
   margin-left: 140px;
+}
+
+@media screen and (max-width: 767px) {
+  .about-container2 p {
+    margin: 0;
+    text-align: start;
+  }
 }
 
 .about-container2 .about_02 {
@@ -322,6 +395,12 @@ h2 {
   justify-content: center;
 }
 
+@media screen and (max-width: 767px) {
+  .service {
+    display: block;
+  }
+}
+
 .service .icon1 {
   border: 3.42px solid #9067E9;
   box-shadow: 10px 10px 0px 0 #9067E9;
@@ -329,6 +408,12 @@ h2 {
   width: 312px;
   margin: 0 10px;
   padding: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .service .icon1 {
+    margin: 0 auto;
+  }
 }
 
 .service img {
@@ -405,6 +490,12 @@ h2 {
   padding: 50px;
 }
 
+@media screen and (max-width: 767px) {
+  .vtext {
+    margin: 0;
+  }
+}
+
 .vtext p {
   width: 436px;
   font-size: 21px;
@@ -423,6 +514,12 @@ h2 {
   margin: 15px;
   width: 374px;
   box-shadow: -15px 15px 0 #E7AFC3;
+}
+
+@media screen and (max-width: 767px) {
+  .voice {
+    margin: 0 auto;
+  }
 }
 
 .contact {
