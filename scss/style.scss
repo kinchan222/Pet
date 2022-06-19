@@ -546,6 +546,7 @@ h3 {
 
     &-1 {
         margin: 0 10px;
+        
     }
 
 
@@ -592,7 +593,6 @@ h3 {
 
 
     .fc {
-        text-align: center;
         font-size: 29px;
         background: linear-gradient(transparent 90%, #FFEA02 50%);
         bottom: -3px;
@@ -607,11 +607,10 @@ h3 {
 
 
     .fl {
-        text-align: center;
         font-size: 29px;
         background: linear-gradient(transparent 90%, #20C55A 50%);
-        bottom: 5px;
-        width: 40%;
+        bottom: -3px;
+        width: 50%;
 
     }
 
