@@ -41,61 +41,62 @@
 
   &-people {
     width: 90%;
-
-    @include sp-screen {
-      display: flex;
-    }
   }
 
-  &-container {
-    position: relative;
-
-    @include sp-screen {
-      position: static;
-    }
-
-    p {
-      font-size: 32px;
-    }
-
-    h1 {
-      font-size: 70px;
-      font-weight: 400;
-    }
-
-    h2 {
-      font-size: 27px;
-      text-align: start;
-    }
-
-    &-3,
-    &-2 {
-      width: 50%;
-      margin-left: 20px;
-
-      @include sp-screen {
-        width: 50%;
-      }
-    }
-
-    &-1,
-    &-4 {
-      width: 50%;
-      margin-left: 350px;
-
-      @include sp-screen {
-        width: 50%;
-        margin: 0 auto;
-      }
-    }
-
-    &-box {
-      position: absolute;
-      width: 100VW;
-      left: 20px 
-    }
+  @include sp-screen {
+    display: flex;
   }
 }
+
+&-container {
+  position: relative;
+
+  @include sp-screen {
+    position: static;
+  }
+
+  p {
+    font-size: 32px;
+  }
+
+  h1 {
+    font-size: 70px;
+    font-weight: 400;
+  }
+
+  h2 {
+    font-size: 27px;
+    text-align: start;
+  }
+
+  &-3,
+  &-2 {
+    width: 50%;
+    margin-left: 20px;
+
+    @include sp-screen {
+      width: 50%;
+    }
+  }
+
+  &-1,
+  &-4 {
+    width: 50%;
+    margin-left: 350px;
+
+    @include sp-screen {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  &-box {
+    position: absolute;
+    width: 100VW;
+    left: 20px
+  }
+}
+
 
 &-container {
   position: absolute;
@@ -242,6 +243,69 @@ h2 {
   @include sp-screen {
     position: static;
   }
+}
+  // about　上
+.about{
+  &-container1 {
+    width: 871px;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    margin: 0 auto;
+
+    @include sp-screen {
+      display: block;
+    }
+
+
+    h4 {
+      margin-bottom: 20px;
+      font-size: 28px;
+      font-weight: 400;
+    }
+
+    p {
+      width: 450px;
+      font-size: 22px;
+      font-weight: 400;
+    }
+
+    img {
+      width: 280px;
+      margin-left: 50px;
+      box-shadow: 15px 15px 0px 0 #F9C83B;
+    }
+  }
+
+  // about　下
+  &-container2 {
+    width: 871px;
+    // height: 504px;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    margin: 0 auto;
+
+    h4 {
+      margin-bottom: 20px;
+      width: 436px;
+      font-size: 28px;
+      font-weight: 400;
+      margin-left: 140px;
+    }
+
+    p {
+      width: 436px;
+      font-size: 22px;
+      font-weight: 400;
+      margin-left: 140px;
+    }
+
+    img {
+      width: 280px;
+      box-shadow: -15px 15px 0px 0 #FFF835;
+    }
+  }
 
   &-deco1 {
     position: absolute;
@@ -294,63 +358,7 @@ h2 {
     text-align: center;
   }
 
-  // about　上
-  &-container1 {
-    width: 871px;
-    display: flex;
-    align-items: center;
-    text-align: start;
-    margin: 0 auto;
 
-
-    h4 {
-      margin-bottom: 20px;
-      font-size: 28px;
-      font-weight: 400;
-    }
-
-    p {
-      width: 450px;
-      font-size: 22px;
-      font-weight: 400;
-    }
-
-    img {
-      width: 280px;
-      margin-left: 50px;
-      box-shadow: 15px 15px 0px 0 #F9C83B;
-    }
-  }
-
-  // about　下
-  &-container2 {
-    width: 871px;
-    // height: 504px;
-    display: flex;
-    align-items: center;
-    text-align: start;
-    margin: 0 auto;
-
-    h4 {
-      margin-bottom: 20px;
-      width: 436px;
-      font-size: 28px;
-      font-weight: 400;
-      margin-left: 140px;
-    }
-
-    p {
-      width: 436px;
-      font-size: 22px;
-      font-weight: 400;
-      margin-left: 140px;
-    }
-
-    img {
-      width: 280px;
-      box-shadow: -15px 15px 0px 0 #FFF835;
-    }
-  }
 }
 
 .about {
