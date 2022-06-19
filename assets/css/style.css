@@ -16,34 +16,27 @@
 .kv {
   display: flex;
   width: 100vw;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 30px;
   position: relative;
 }
 
 .kv-people {
-  width: 90%;
-}
-
-.kv-people-3, .kv-people-2 {
-  width: 50%;
-  margin-left: 20px;
-}
-
-.kv-people-1, .kv-people-4 {
-  width: 50%;
-  margin-left: 350px;
+  background-color: #20C55A;
+  width: 23%;
 }
 
 .kv-box {
-  position: relative;
-  width: 100VW;
-  left: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
 }
 
 .kv-container {
   position: absolute;
-  top: 280px;
-  left: 450px;
+  top: 100px;
+  left: 400px;
 }
 
 .kv-container p {
@@ -203,7 +196,7 @@ h2 {
   font-weight: 400;
 }
 
-.about img {
+.about .about_01 {
   width: 280px;
   margin-left: 50px;
   box-shadow: 15px 15px 0px 0 #F9C83B;
@@ -232,7 +225,7 @@ h2 {
   margin-left: 140px;
 }
 
-.about-container2 img {
+.about-container2 .about_02 {
   width: 280px;
   box-shadow: -15px 15px 0px 0 #FFF835;
 }
@@ -286,18 +279,6 @@ h2 {
 .about h3 {
   font-size: 50px;
   text-align: center;
-}
-
-@media screen and (max-width: 767px) {
-  .about {
-    position: static;
-  }
-  .about-container1 {
-    display: block;
-  }
-  .about-container2 {
-    display: block;
-  }
 }
 
 .sponser {
