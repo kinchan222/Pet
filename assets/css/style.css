@@ -13,89 +13,10 @@
   }
 }
 
-.kv {
-  display: flex;
-  width: 100vw;
-  justify-content: center;
-}
-
-@media screen and (max-width: 767px) {
-  .kv {
-    display: block;
-    width: 100%;
-  }
-}
-
-.kv-people {
-  width: 90%;
-}
-
-@media screen and (max-width: 767px) {
-  .kv {
-    display: flex;
-  }
-}
-
-.kv-container {
-  position: relative;
-}
-
-@media screen and (max-width: 767px) {
-  .kv-container {
-    position: static;
-  }
-}
-
-.kv-container p {
-  font-size: 32px;
-}
-
-.kv-container h1 {
-  font-size: 70px;
-  font-weight: 400;
-}
-
-.kv-container h2 {
-  font-size: 27px;
-  text-align: start;
-}
-
-.kv-container-3, .kv-container-2 {
-  width: 50%;
-  margin-left: 20px;
-}
-
-@media screen and (max-width: 767px) {
-  .kv-container-3, .kv-container-2 {
-    width: 50%;
-  }
-}
-
-.kv-container-1, .kv-container-4 {
-  width: 50%;
-  margin-left: 350px;
-}
-
-@media screen and (max-width: 767px) {
-  .kv-container-1, .kv-container-4 {
-    width: 50%;
-    margin: 0 auto;
-  }
-}
-
-.kv-container-box {
-  position: absolute;
-  width: 100VW;
-  left: 20px;
-}
-
 .content {
   background-color: black;
   width: 100vw;
   padding: 30px;
-  animation-name: fadeInDown;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
 }
 
 .livers-container {
@@ -492,13 +413,31 @@ h3 {
   margin: 0 10px;
 }
 
+.contact-wrap label {
+  display: block;
+  font-size: 18px;
+}
+
 .contact-wrap input {
   width: 370px;
   font-size: 18px;
   margin-bottom: 18px;
+  margin: .4rem 0;
+  color: solid 1px black;
+  border: 1.43px solid #000000;
 }
 
-.contact-wrap input button {
+.contact-wrap textarea {
+  width: 370px;
+  height: 194px;
+  font-size: 18px;
+  margin-bottom: 18px;
+  margin: .4rem 0;
+  color: solid 1px black;
+  border: 1.43px solid #000000;
+}
+
+.contact-wrap button {
   width: 370px;
   background-color: black;
   color: white;
@@ -507,28 +446,13 @@ h3 {
   cursor: pointer;
 }
 
-.contact-wrap input button label {
-  display: block;
-  font-size: 18px;
-}
-
-.contact-wrap input button label input {
-  margin: .4rem 0;
-  color: solid 1px black;
-  border: 1.43px solid #000000;
-}
-
-.contact #cmnt {
-  width: 374px;
-  height: 600px;
-}
-
 .contact .fc {
   text-align: center;
   font-size: 29px;
   background: linear-gradient(transparent 90%, #FFEA02 50%);
   bottom: -3px;
   width: 50%;
+  margin-left: 0 auto;
 }
 
 .contact p {
@@ -553,7 +477,7 @@ h3 {
 }
 
 .contact .denw {
-  margin: auto;
+  display: flex;
 }
 
 .contact-2 {
@@ -569,6 +493,12 @@ h3 {
   width: 40%;
   float: left;
   margin-left: 3%;
+}
+
+@media screen and (max-width: 767px) {
+  .contact {
+    flex-direction: column;
+  }
 }
 
 .company {
@@ -589,7 +519,7 @@ h5 {
 
 footer {
   background-color: black;
-  color: green;
+  color: white;
   text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
