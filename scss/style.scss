@@ -29,6 +29,25 @@
 
 // ***************   kv   *************** 
 .kv {
+<<<<<<< HEAD
+=======
+
+  display: flex;
+  // border: solid 1px black;
+  width: 100vw;
+  justify-content: center;
+
+  @include sp-screen {
+    display: block;
+    width: 100%;
+  }
+
+  &-people {
+    width: 90%;
+  }
+
+  @include sp-screen {
+>>>>>>> 6eae989a669caf1917a668161846cb4656df20ea
     display: flex;
     // border: solid 1px black;
     width: 100vw;
@@ -107,9 +126,20 @@
 
 // ***************    Livers    *************** 
 .content {
+<<<<<<< HEAD
     background-color: black;
     width: 100vw;
     padding: 30px;
+=======
+  background-color: black;
+  width: 100vw;
+  padding: 30px;
+
+    // アニメーション
+    animation-name: fadeInDown;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+>>>>>>> 6eae989a669caf1917a668161846cb4656df20ea
 }
 
 .livers {
