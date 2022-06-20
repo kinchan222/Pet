@@ -49,16 +49,32 @@
 
     @include sp-screen {
         display: block;
+        padding: 0;
     }
 
-    &-people {
+    &-people1{
+        width: 25%;
+        @include sp-screen {
+            display: flex;
+            width: 100%;
+            margin-bottom: 62%;
+        }
+
+    &-peopleleft{
+        @include sp-screen {
+            width: 40%;
+        }
+
+    }
+
+    }
+    &-people2 {
         // background-color: #20C55A;
         width: 25%;
 
         @include sp-screen {
             display: flex;
             width: 100%;
-
         }
 
     }
@@ -70,7 +86,9 @@
         left: 0px;
 
         @include sp-screen {
-            // position: static;
+            height: fit-content;
+            top: 38%;
+            
         }
     }
 
@@ -80,21 +98,33 @@
         left: 400px;
 
         @include sp-screen {
-            left: 0;
+            left: 10%;
+            top: 38%;
         }
 
         p {
-            font-size: 32px;
+            font-size: 34px;
+
+            @include sp-screen {
+                font-size: 27px;
+            }
         }
 
         h1 {
             font-size: 70px;
             font-weight: 400;
+
+            @include sp-screen {
+                font-size: 50px;
+            }
         }
 
         h2 {
             font-size: 27px;
             text-align: start;
+            @include sp-screen {
+                font-size: 22px;
+            }
         }
 
     }
@@ -102,10 +132,31 @@
 }
 
 // ***************    Livers    *************** 
+@keyframes fadeUpAnime{
+    from {
+      opacity: 0;
+    transform: translateY(-100px);
+    }
+  
+    to {
+      opacity: 2;
+    transform: translateY(0);
+    }
+  }
+
 .content {
     background-color: black;
     width: 100vw;
     padding: 30px;
+
+    animation-name:livers;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+
+    @include sp-screen {
+        opacity:1;
+    }
 
 }
 
@@ -367,6 +418,10 @@ h2 {
         left: 0%;
         right: 84.11%;
         top: 10.29%;
+
+        @include sp-screen {
+            left: -1000px;
+        }
     }
 
     &-deco2 {
@@ -375,6 +430,10 @@ h2 {
         left: 82.01%;
         right: 3.59%;
         top: 9.38%;
+
+        @include sp-screen {
+            left: -1000px;
+        }
     }
 
     &-deco3 {
@@ -383,6 +442,10 @@ h2 {
         left: 1.36%;
         right: 90.12%;
         top: 45.91%;
+
+        @include sp-screen {
+            left: -1000px;
+        }
     }
 
 
@@ -391,6 +454,10 @@ h2 {
         width: 19%;
         left: 81%;
         top: 30%;
+
+        @include sp-screen {
+            left: -1000px;
+        }
     }
 
     &-deco5 {
@@ -399,6 +466,10 @@ h2 {
         left: 8%;
         right: 86.77%;
         top: 80%;
+
+        @include sp-screen {
+            left: -1000px;
+        }
     }
 
     &-deco6 {
@@ -406,6 +477,10 @@ h2 {
         width: 4%;
         left: 88%;
         top: 80%;
+
+        @include sp-screen {
+            left: -1000px;
+        }
     }
 }
 
@@ -522,6 +597,10 @@ h2 {
         width: 91px;
         top: 5%;
         left: 1%;
+
+        @include sp-screen {
+            left: -1000px;
+        }
     }
 
     &-8 {
@@ -530,6 +609,10 @@ h2 {
         height: 212px;
         top: 0;
         left: 81%;
+
+        @include sp-screen {
+            left: -1000px;
+        }
     }
 
     &-9 {
@@ -538,6 +621,10 @@ h2 {
         height: 330px;
         left: 0;
         top: 41%;
+
+        @include sp-screen {
+            left: -1000px;
+        }
     }
 
     &-10 {
@@ -545,7 +632,12 @@ h2 {
         width: 92px;
         left: 88%;
         top: 78%;
+
+        @include sp-screen {
+            left: -1000px;
+        }
     }
+
 
 }
 
@@ -568,6 +660,10 @@ h2 {
         width: 436px;
         font-size: 21px;
         font-weight: 400;
+
+        @include sp-screen {
+            width: fit-content;
+        }
     }
 
     h5 {
