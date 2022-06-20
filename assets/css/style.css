@@ -65,8 +65,7 @@
   left: 0px;
 }
 
-<<<<<<< HEAD
-=======
+
 @media screen and (max-width: 767px) {
   .kv-box {
     height: fit-content;
@@ -74,7 +73,6 @@
   }
 }
 
->>>>>>> 4fcf65ab0bdd9b0ff02e950ec30d3231120d514a
 .kv-container {
   position: absolute;
   top: 100px;
