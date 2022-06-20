@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .menu {
   display: flex;
   width: 71vw;
@@ -14,7 +13,6 @@
   }
 }
 
-/* パソコンで見たときは"pc"のclassがついた画像が表示される */
 .kv {
   display: flex;
   width: 100vw;
@@ -26,6 +24,7 @@
 @media screen and (max-width: 767px) {
   .kv {
     display: block;
+    padding: 0;
   }
 }
 
@@ -64,7 +63,6 @@
   height: 100%;
   left: 0px;
 }
-
 
 @media screen and (max-width: 767px) {
   .kv-box {
@@ -136,7 +134,7 @@
   animation-name: livers;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
-  opacity: 0;
+  opacity: 1;
 }
 
 @media screen and (max-width: 767px) {
@@ -334,6 +332,7 @@ h2 {
   align-items: center;
   text-align: start;
   margin: 0 auto;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 767px) {

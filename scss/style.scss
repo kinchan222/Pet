@@ -29,16 +29,6 @@
 
 // ***************   kv   *************** 
 
-/* パソコンで見たときは"pc"のclassがついた画像が表示される */
-// .pc { display: block !important; }
-// .sp { display: none !important; }
-
-// /* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
-// @media only screen and (max-width: 767px) {
-//     .pc { display: none !important; }
-//     .sp { display: block !important; }
-// }
-
 .kv {
     display: flex;
     // border: solid 1px black;
@@ -152,7 +142,7 @@
     animation-name:livers;
     animation-duration:0.5s;
     animation-fill-mode:forwards;
-    opacity:0;
+    opacity:1;
 
     @include sp-screen {
         opacity:1;
@@ -368,6 +358,7 @@ h2 {
         align-items: center;
         text-align: start;
         margin: 0 auto;
+        justify-content: space-around;
 
         @include sp-screen {
             display: block;
