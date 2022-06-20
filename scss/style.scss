@@ -606,10 +606,9 @@ h2 {
         height: 100%;
     }
 
-    &-1 {
-        margin: 0 10px;
-
-    }
+    // &-1 {
+        
+    // }
 
 
     &-wrap {
@@ -617,6 +616,7 @@ h2 {
         label {
             display: block;
             font-size: 18px;
+            width: 52px;
         }
 
         input {
@@ -655,46 +655,63 @@ h2 {
 
 
     .fc {
+        text-align: center;
         font-size: 29px;
         background: linear-gradient(transparent 90%, #FFEA02 50%);
         bottom: -3px;
-        width: 50%;
+        width: 150px;
         margin-left: 0 auto;
+
+        @include sp-screen {
+            margin: 0 auto;
+        }
     }
 
     p {
         font-size: 18px;
         padding: 20px;
+        width: 327px;
     }
 
 
     .fl {
+        text-align: center;
         font-size: 29px;
         background: linear-gradient(transparent 90%, #20C55A 50%);
         bottom: -3px;
-        width: 50%;
+        width: 141px;
 
-
+        @include sp-screen {
+            margin: 0 auto;
+        }
     }
 
     .ar {
+        height: 55px;
         width: 47px;
+
+        @include sp-screen {
+            margin: 0 auto;
+        }
     }
 
     .wa {
+        height: 130px;
         width: 366px;
+
+        @include sp-screen {
+            margin: 0 auto;
+        }
     }
 
     .denw {
         display: flex;
-
-
-
-
-
+        @include sp-screen {
+            flex-direction: column;
+        }
     }
 
-    &-2 {
+    &-2 {     
         margin-left: 3%;
         margin-top: 2%;
         width: 2px;
@@ -747,11 +764,28 @@ h5 {
     font-size: 20px;
 }
 
+h3{
+    font-size: 46px;
+    padding: 23px;
+}
+
+.map{
+    margin-bottom: 185px;
+}
 
 // footer
 
 footer {
     background-color: black;
+    height: 35px;
     color: white;
     text-align: center;
+    font-size: 7px;
+    margin: 0 auto;
+    padding:10px 0;
+
+
+    @include sp-screen {
+        width: 100%;
+    }
 }
