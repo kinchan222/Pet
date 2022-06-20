@@ -29,12 +29,30 @@
   }
 }
 
-.kv-people {
+.kv-people1 {
   width: 25%;
 }
 
 @media screen and (max-width: 767px) {
-  .kv-people {
+  .kv-people1 {
+    display: flex;
+    width: 100%;
+    margin-bottom: 62%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .kv-people1-peopleleft {
+    width: 40%;
+  }
+}
+
+.kv-people2 {
+  width: 25%;
+}
+
+@media screen and (max-width: 767px) {
+  .kv-people2 {
     display: flex;
     width: 100%;
   }
@@ -47,6 +65,16 @@
   left: 0px;
 }
 
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 767px) {
+  .kv-box {
+    height: fit-content;
+    top: 38%;
+  }
+}
+
+>>>>>>> 4fcf65ab0bdd9b0ff02e950ec30d3231120d514a
 .kv-container {
   position: absolute;
   top: 100px;
@@ -55,12 +83,19 @@
 
 @media screen and (max-width: 767px) {
   .kv-container {
-    left: 0;
+    left: 10%;
+    top: 38%;
   }
 }
 
 .kv-container p {
-  font-size: 32px;
+  font-size: 34px;
+}
+
+@media screen and (max-width: 767px) {
+  .kv-container p {
+    font-size: 27px;
+  }
 }
 
 .kv-container h1 {
@@ -68,15 +103,48 @@
   font-weight: 400;
 }
 
+@media screen and (max-width: 767px) {
+  .kv-container h1 {
+    font-size: 50px;
+  }
+}
+
 .kv-container h2 {
   font-size: 27px;
   text-align: start;
+}
+
+@media screen and (max-width: 767px) {
+  .kv-container h2 {
+    font-size: 22px;
+  }
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 2;
+    transform: translateY(0);
+  }
 }
 
 .content {
   background-color: black;
   width: 100vw;
   padding: 30px;
+  animation-name: livers;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    opacity: 1;
+  }
 }
 
 .livers-container {
@@ -325,12 +393,24 @@ h2 {
   top: 10.29%;
 }
 
+@media screen and (max-width: 767px) {
+  .about-deco1 {
+    left: -1000px;
+  }
+}
+
 .about-deco2 {
   position: absolute;
   width: 12%;
   left: 82.01%;
   right: 3.59%;
   top: 9.38%;
+}
+
+@media screen and (max-width: 767px) {
+  .about-deco2 {
+    left: -1000px;
+  }
 }
 
 .about-deco3 {
@@ -341,11 +421,23 @@ h2 {
   top: 45.91%;
 }
 
+@media screen and (max-width: 767px) {
+  .about-deco3 {
+    left: -1000px;
+  }
+}
+
 .about-deco4 {
   position: absolute;
   width: 19%;
   left: 81%;
   top: 30%;
+}
+
+@media screen and (max-width: 767px) {
+  .about-deco4 {
+    left: -1000px;
+  }
 }
 
 .about-deco5 {
@@ -356,11 +448,23 @@ h2 {
   top: 80%;
 }
 
+@media screen and (max-width: 767px) {
+  .about-deco5 {
+    left: -1000px;
+  }
+}
+
 .about-deco6 {
   position: absolute;
   width: 4%;
   left: 88%;
   top: 80%;
+}
+
+@media screen and (max-width: 767px) {
+  .about-deco6 {
+    left: -1000px;
+  }
 }
 
 .name {
@@ -470,12 +574,24 @@ h2 {
   left: 1%;
 }
 
+@media screen and (max-width: 767px) {
+  .dc-7 {
+    left: -1000px;
+  }
+}
+
 .dc-8 {
   position: absolute;
   width: 222px;
   height: 212px;
   top: 0;
   left: 81%;
+}
+
+@media screen and (max-width: 767px) {
+  .dc-8 {
+    left: -1000px;
+  }
 }
 
 .dc-9 {
@@ -486,11 +602,23 @@ h2 {
   top: 41%;
 }
 
+@media screen and (max-width: 767px) {
+  .dc-9 {
+    left: -1000px;
+  }
+}
+
 .dc-10 {
   position: absolute;
   width: 92px;
   left: 88%;
   top: 78%;
+}
+
+@media screen and (max-width: 767px) {
+  .dc-10 {
+    left: -1000px;
+  }
 }
 
 .name {
@@ -513,6 +641,12 @@ h2 {
   width: 436px;
   font-size: 21px;
   font-weight: 400;
+}
+
+@media screen and (max-width: 767px) {
+  .vtext p {
+    width: fit-content;
+  }
 }
 
 .vtext h5 {
