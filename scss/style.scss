@@ -28,6 +28,17 @@
 }
 
 // ***************   kv   *************** 
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc { display: block !important; }
+.sp { display: none !important; }
+
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 767px) {
+    .pc { display: none !important; }
+    .sp { display: block !important; }
+}
+
 .kv {
     display: flex;
     // border: solid 1px black;
@@ -38,7 +49,6 @@
 
     @include sp-screen {
         display: block;
-        padding: 0;
     }
 
     &-people {
@@ -48,7 +58,7 @@
         @include sp-screen {
             display: flex;
             width: 100%;
-            
+
         }
 
     }
@@ -60,8 +70,8 @@
         left: 0px;
 
         @include sp-screen {
-            position: static;
-         }
+            // position: static;
+        }
     }
 
     &-container {
@@ -70,7 +80,7 @@
         left: 400px;
 
         @include sp-screen {
-           left: 0;
+            left: 0;
         }
 
         p {
@@ -112,20 +122,25 @@
 
         @include sp-screen {
             display: block;
+            margin: 0;
+            padding: 0;
+            text-align: center;
         }
 
 
         p {
             font-size: 11px;
             font-weight: 400;
-            margin-left: 10px;
+
+            @include sp-screen {
+                text-align: start;
+            }
         }
 
         h3 {
             font-size: 18px;
             font-weight: 400;
             text-align: start;
-            margin-left: 10px;
         }
     }
 
@@ -186,9 +201,19 @@
         width: 21%;
         margin: 5px;
     }
-    &-main1,&-main2,&-main3,&-main4,&-main5,&-main6,&-main6,&-main7,&-main8{
+
+    &-main1,
+    &-main2,
+    &-main3,
+    &-main4,
+    &-main5,
+    &-main6,
+    &-main6,
+    &-main7,
+    &-main8 {
         @include sp-screen {
-            width: 100%;
+            width: 70%;
+            margin: 15px auto;
         }
     }
 
@@ -204,11 +229,19 @@
         margin: 10px 5px;
 
         @include sp-screen {
-            width: 64%;
+            width: 75%;
             margin: 10px auto;
         }
     }
+}
 
+.boxname {
+    margin: 0 0 10px 10px;
+
+    @include sp-screen {
+        width: 75%;
+        margin: 5px auto;
+    }
 }
 
 h2 {
@@ -229,7 +262,7 @@ h2 {
     text-align: end;
 
     @include sp-screen {
-        position: static;
+        // position: static;
     }
 
     // about　上
@@ -244,6 +277,7 @@ h2 {
             display: block;
             width: 100%;
             text-align: center;
+            margin-bottom: 40px;
         }
 
     }
@@ -290,27 +324,34 @@ h2 {
             text-align: center;
         }
 
-        h4 {
-            margin-bottom: 20px;
-            width: 436px;
-            font-size: 28px;
-            font-weight: 400;
-            margin-left: 140px;
-
+        &-main {
             @include sp-screen {
-                margin: 0;
+                background-image: url(../img/bg_01.png);
             }
-        }
 
-        p {
-            width: 436px;
-            font-size: 22px;
-            font-weight: 400;
-            margin-left: 140px;
 
-            @include sp-screen {
-                margin: 0;
-                text-align: start;
+            h4 {
+                margin-bottom: 20px;
+                width: 436px;
+                font-size: 28px;
+                font-weight: 400;
+                margin-left: 140px;
+
+                @include sp-screen {
+                    margin: 0;
+                }
+            }
+
+            p {
+                width: 436px;
+                font-size: 22px;
+                font-weight: 400;
+                margin-left: 140px;
+
+                @include sp-screen {
+                    margin: 0;
+                    text-align: start;
+                }
             }
         }
 
@@ -472,7 +513,7 @@ h2 {
 
     @include sp-screen {
         display: block;
-        position: static;
+        // position: static;
     }
 
     // position: relative;
@@ -513,7 +554,6 @@ h2 {
 .name {
     font-size: 50px;
     text-align: center;
-    padding-top: 50px;
 }
 
 .vtext {
@@ -560,6 +600,11 @@ h2 {
     margin: 0 auto;
     max-width: 1170px;
     justify-content: center;
+
+    @include sp-screen {
+        display: block;
+        height: 100%;
+    }
 
     &-1 {
         margin: 0 10px;
@@ -629,6 +674,7 @@ h2 {
         bottom: -3px;
         width: 50%;
 
+
     }
 
     .ar {
@@ -655,6 +701,10 @@ h2 {
         height: 672px;
         background-color: black;
         float: left;
+
+        @include sp-screen {
+            height: 0;
+        }
     }
 
     &-3 {
@@ -662,25 +712,31 @@ h2 {
         float: left;
         margin-left: 3%;
 
+        @include sp-screen {
+            width: 0;
+        }
+
+
     }
 }
 
-
-@include sp-screen {
-    .contact {
-        flex-direction: column;
-    }
-
-
-}
 
 // Company
 .company {
     display: flex;
     justify-content: space-around;
-    padding: 50px;
     max-width: 1170px;
     margin: auto;
+
+    @include sp-screen {
+        display: block;
+    }
+
+    &-left {
+        @include sp-screen {
+            margin: 0 auto;
+        }
+    }
 }
 
 h4 {
@@ -690,19 +746,6 @@ h4 {
 h5 {
     font-size: 20px;
 }
-
-
-// input {
-
-//     display: flex;
-//     width: 250px;
-//     color: black;
-//     text-align: center;
-//     padding: 15px;
-
-// }
-
-
 
 
 // footer

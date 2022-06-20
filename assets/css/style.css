@@ -97,20 +97,27 @@
 @media screen and (max-width: 767px) {
   .livers-container {
     display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
   }
 }
 
 .livers-container p {
   font-size: 11px;
   font-weight: 400;
-  margin-left: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .livers-container p {
+    text-align: start;
+  }
 }
 
 .livers-container h3 {
   font-size: 18px;
   font-weight: 400;
   text-align: start;
-  margin-left: 10px;
 }
 
 .livers-main1 {
@@ -171,7 +178,8 @@
 
 @media screen and (max-width: 767px) {
   .livers-main1, .livers-main2, .livers-main3, .livers-main4, .livers-main5, .livers-main6, .livers-main6, .livers-main7, .livers-main8 {
-    width: 100%;
+    width: 70%;
+    margin: 15px auto;
   }
 }
 
@@ -182,8 +190,19 @@
 
 @media screen and (max-width: 767px) {
   .livers-box1, .livers-box2, .livers-box3, .livers-box4, .livers-box5, .livers-box6, .livers-box7, .livers-box8 {
-    width: 64%;
+    width: 75%;
     margin: 10px auto;
+  }
+}
+
+.boxname {
+  margin: 0 0 10px 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .boxname {
+    width: 75%;
+    margin: 5px auto;
   }
 }
 
@@ -220,6 +239,7 @@ h2 {
     display: block;
     width: 100%;
     text-align: center;
+    margin-bottom: 40px;
   }
 }
 
@@ -266,6 +286,12 @@ h2 {
     display: block;
     width: 100%;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-container2-main {
+    background-image: url(../img/bg_01.png);
   }
 }
 
@@ -482,7 +508,6 @@ h2 {
 .name {
   font-size: 50px;
   text-align: center;
-  padding-top: 50px;
 }
 
 .vtext {
@@ -527,6 +552,13 @@ h2 {
   margin: 0 auto;
   max-width: 1170px;
   justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .contact {
+    display: block;
+    height: 100%;
+  }
 }
 
 .contact-1 {
@@ -607,6 +639,12 @@ h2 {
   float: left;
 }
 
+@media screen and (max-width: 767px) {
+  .contact-2 {
+    height: 0;
+  }
+}
+
 .contact-3 {
   width: 40%;
   float: left;
@@ -614,17 +652,28 @@ h2 {
 }
 
 @media screen and (max-width: 767px) {
-  .contact {
-    flex-direction: column;
+  .contact-3 {
+    width: 0;
   }
 }
 
 .company {
   display: flex;
   justify-content: space-around;
-  padding: 50px;
   max-width: 1170px;
   margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .company {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .company-left {
+    margin: 0 auto;
+  }
 }
 
 h4 {
